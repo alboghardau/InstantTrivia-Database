@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="stylesheet">
     </head>
     <body>
+        
+        <?php include("menu.php");?>
+        
         <div class="container">
         <div class="row">
-            <div class="span2">
-               <center><?php include("menu.php");?></center>
-            </div>
-            <div class="span9 well">
+
+            <div class="span12 well">
         
             </div>
         </div>

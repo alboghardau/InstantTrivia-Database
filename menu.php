@@ -1,4 +1,12 @@
-<a class="btn btn-block btn-primary" type="button" href="index.php">Home</a>
-<a class="btn btn-block btn-primary" type="button" href="categories.php">Categories</a>
-<a class="btn btn-block btn-primary" type="button" href="tests.php">Tests</a>
-<a class="btn btn-block btn-danger" type="button" href="phpliteadmin/phpliteadmin.php">PHPLiteAdmin</a>
+        <div class="navbar navbar-static-top" >
+            <div class="navbar-inner">
+                <div class="container">                    
+                    <ul class="nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="categories.php">Categories</a></li>
+                        <li><a href="tests.php">Tests</a></li>
+                        <li><a href="phpliteadmin/phpliteadmin.php">PHPLiteAdmin</a></li>
+                    </ul>                   
+                </div>
+            </div>
+        </div>

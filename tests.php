@@ -1,27 +1,7 @@
 <?php $db = new PDO("sqlite:phpliteadmin/answerit.db");
  session_start();
-
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-        <div class="row">
-            <div class="span2">
-               <center><?php include("menu.php");?></center>
-            </div>
-            <div class="span9 well">
-               <center>
-                
-                <?php
-                
-                function diff($diff){
+ 
+              function diff($diff){
                     if($diff == 1)
                     return "Easy";
                     if($diff == 2)
@@ -35,25 +15,50 @@
                     $_SESSION['test_cat_id'] = 0;
                 }
                 
-                $sub_cont = 1;
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="stylesheet">
+    </head>
+    <body>
+        
+        <?php include("menu.php");?>
+        
+        <div class="container">
+        <div class="row">
+            <div class="span2">
+                <div class="btn-group btn-group-vertical"
+                <?php 
+                
                 $res = $db->query("SELECT * FROM cats");
-                echo '<table><tr>';
+
                 foreach ($res as $val) {
                     if($val['id'] == $_SESSION['test_cat_id'] && isset($_SESSION['test_cat_id']))
                     {
-                    echo '<td><a class="btn btn-success" href="scripts/test_set_cat.php?action=1&id='.$val['id'].'">'.$val['name'].'</a><td>';
+                    echo '<a class="btn btn-success" href="scripts/test_set_cat.php?action=1&id='.$val['id'].'">'.$val['name'].'</a>';
                     }
                     else {
-                    echo '<td><a class="btn btn-warning" href="scripts/test_set_cat.php?action=1&id='.$val['id'].'">'.$val['name'].'</a><td>';
+                    echo '<a class="btn btn-warning" href="scripts/test_set_cat.php?action=1&id='.$val['id'].'">'.$val['name'].'</a>';
                     }
-                    
-                    if($sub_cont%5 == 0)
-                    {
-                        echo "</tr><tr>";
-                    }
-                    $sub_cont++;
                 }
-                echo '</tr></table><br/>';
+
+                
+                ?>
+            </div>
+            </div>
+            
+            <div class="span9 well">
+               <center>
+                
+                <?php
+                
+   
+
                             
                 if(isset($_SESSION['test_cat_id']))
                 {
