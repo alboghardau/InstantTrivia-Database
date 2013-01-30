@@ -1,6 +1,7 @@
         <div class="navbar navbar-static-top" >
             <div class="navbar-inner">
-                <div class="container">                    
+                <div class="container">
+                    <a class="brand">Answer It Trivia Database Editor</a>
                     <ul class="nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="categories.php">Categories</a></li>

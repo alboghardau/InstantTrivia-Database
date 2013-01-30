@@ -35,6 +35,8 @@
 
                 <?php
                 
+
+                
                 //read test topic
                 $res2 = $db->query("SELECT * FROM tests WHERE id=".$testid);
                      foreach($res2 as $val2)
@@ -53,9 +55,30 @@
                          $qu = $val['question'];
                          $an = $val['answer'];
                          $qid = $val['id'];
-                        
+                         $_SESSION['ans_test'] = $val['answer'];
                          
                      }
+                     
+                     
+                     
+                    if(isset($_SESSION['ans_test']))
+                    {
+                        echo '<table class="table"><th>Question</th><th>Answer</th>';
+                        
+                    $res3 = $db->query("SELECT * FROM quest");
+                    foreach ($res3 as $val3) {
+                        if($val3[2] == $_SESSION['ans_test'])
+                        {
+                           echo "<tr>";
+                           echo "<td>".$val3[1]."</td>";
+                           echo "<td>".$val3[2]."</td>";
+                           echo "</tr>";
+                        }
+                    }
+                    
+                        echo '</table>';
+                }
+                     
                      
                      
                     echo '          <center>

@@ -19,8 +19,10 @@ $id = $_GET['id'];
     }
     if($act == 3)
     {
+        unset($_SESSION['ans_test']);
         unset($_SESSION['edit_q']);
     }
+$db = null;   
 header("Location: ../test_edit.php?id=".$tid);
 ob_flush();
 ?>

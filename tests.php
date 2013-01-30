@@ -43,7 +43,7 @@
                     echo '<a class="btn btn-success" href="scripts/test_set_cat.php?action=1&id='.$val['id'].'">'.$val['name'].'</a>';
                     }
                     else {
-                    echo '<a class="btn btn-warning" href="scripts/test_set_cat.php?action=1&id='.$val['id'].'">'.$val['name'].'</a>';
+                    echo '<a class="btn btn-inverse" href="scripts/test_set_cat.php?action=1&id='.$val['id'].'">'.$val['name'].'</a>';
                     }
                 }
 
