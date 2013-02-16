@@ -78,7 +78,6 @@
                          echo '<td><a class="btn btn-warning" href="test_edit.php?id='.$val['id'].'">Edit</a></td>';
                          echo '<td>'.$val['id'].'</td>';
                          echo '<td>'.diff($val['diff']).'</td>';
-                         echo '<td>'.$val['topic'].'</td>';
                          echo '</tr>';
                      }
                      echo '</tbody></table>';

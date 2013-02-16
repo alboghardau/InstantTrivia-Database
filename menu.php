@@ -7,7 +7,11 @@
                         <li><a href="categories.php">Categories</a></li>
                         <li><a href="tests.php">Tests</a></li>
                         <li><a href="phpliteadmin/phpliteadmin.php">PHPLiteAdmin</a></li>
+                        <li><a href="scripts/generate_tests.php" lass="btn" data-toggle="modal">Create Tests</a></li>
                     </ul>                   
                 </div>
             </div>
         </div>
+
+
+ 

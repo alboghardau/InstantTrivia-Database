@@ -40,8 +40,7 @@
                 //read test topic
                 $res2 = $db->query("SELECT * FROM tests WHERE id=".$testid);
                      foreach($res2 as $val2)
-                     {
-                         $topic = $val2['topic'];   
+                     {                         
                          $ex_diff = $val2['diff'];
                      }                
 
@@ -104,27 +103,11 @@
                     
                     echo'
                 <br/><center>
-                <form class="form-inline" action="scripts/test_topic.php" method="post">                
-                Topic:</td><td><input class="input-long" type="text" name="desc" value="'.$topic.'"/>
-                <button  class="btn" type="submit">Save</button>
-                <input type="hidden" name="test_id" value="'.$testid.'"/>
-                </form></center>               
+                </center>               
                         ';
                 }
                  
-                echo "<center>";
-                for($i = 1; $i <= 3; $i++)
-                {
-                    if($ex_diff == $i)
-                    {    
-                    echo '<a class="btn btn-warning" href="scripts/test_diff.php?diff='.$i.'&testid='.$testid.'">'.show_diff($i)."</a>";
-                    }
-                    else
-                    {                        
-                    echo '<a class="btn" href="scripts/test_diff.php?diff='.$i.'&testid='.$testid.'">'.show_diff($i)."</a>";
-                    }
-                }
-                echo "</center>";
+
                 
                 $no = 1;
              
