@@ -1,6 +1,9 @@
 <?php
 session_start();
 $db = new PDO("sqlite:phpliteadmin/questions.db");
+$ans = new PDO("sqlite:phpliteadmin/answerit.db");
+
+include("functions.php");
 
 if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
 
@@ -19,7 +22,36 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
         
         <div class="container">
         <div class="row">
-
+            
+            <?php
+            
+            if(isset($_SESSION['edit_q']))
+            {
+                $sql = $ans->prepare("SELECT * FROM quest WHERE id=".$_SESSION['edit_q']);
+                $sql->execute();
+                foreach($sql as $val)
+                {
+                    $q = $val['question'];
+                    $a = $val['answer'];
+                }
+                
+                echo '<div class="span12 well">';
+                
+                echo '<form class="form-inline" action="scripts/import_edit.php" method="post">
+                      <input type="text" name="q" value="'.$q.'" style="width:60%"/>
+                      <input type="text" name="a" value="'.$a.'"/>
+                      <input type="hidden" name="id" value="'.$_SESSION['edit_q'].' "/>
+                      <button class="btn" type="submit">Edit</button>
+                      </form>
+';
+                disp_cats($_SESSION['edit_q']);
+                disp_diff($_SESSION['edit_q']);
+                
+                echo '</div>';
+            }
+            
+            ?>      
+            
             <div class="span12 well">
         
                 <center>
@@ -62,7 +94,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 echo "<tr>";
                 echo '<td>'.$val['question'].'</td>';
                 echo '<td>'.$val['answer'].'</td>';
-                echo '<td><a class="btn">'."Add".'</a></td>';
+                echo '<td><a class="btn" href="scripts/import_q.php?id='.$val['id'].'">'."Add".'</a></td>';
                 echo "</tr>";
     
 }
@@ -78,4 +110,5 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
 
 <?php
 $db = null;
+$ans = null;
 ?>
