@@ -46,6 +46,7 @@ $sql->execute();
 $sql = $db->prepare("UPDATE quest SET test_id=0");
 $sql->execute();
 
+
 $query_1 = $db->query("SELECT * FROM cats");
 
 $updates_cont = 0;
@@ -65,11 +66,11 @@ foreach ($query_1 as $val) {
         $c1++;
     }
     
-    echo "Easy:".sizeof($easy)/10;
+    echo "Easy:".floor(sizeof($easy)/10);
     
     if($easy != NULL)
     {
-        for($i = 0; $i<sizeof($easy)/10;$i++)
+        for($i = 0; $i<floor(sizeof($easy)/10);$i++)
         {            
             //create test
             $sql = $db->prepare("INSERT INTO tests (cat_id,diff) VALUES (".$val['id'].",1)");
@@ -97,11 +98,11 @@ foreach ($query_1 as $val) {
         $c2++;
     }
     
-        echo " Medium:".sizeof($med)/10;
+        echo " Medium:".floor(sizeof($med)/10);
         
             if($med != NULL)
     {
-        for($i = 0; $i<sizeof($med)/10;$i++)
+        for($i = 0; $i<floor(sizeof($med)/10);$i++)
         {            
             //create test
             $sql = $db->prepare("INSERT INTO tests (cat_id,diff) VALUES (".$val['id'].",2)");
@@ -129,11 +130,11 @@ foreach ($query_1 as $val) {
         $c3++;
     }
     
-        echo " Hard:".sizeof($hard)/10;
+        echo " Hard:".floor(sizeof($hard)/10);
         
             if($med != NULL)
     {
-        for($i = 0; $i<sizeof($hard)/10;$i++)
+        for($i = 0; $i<floor(sizeof($hard)/10);$i++)
         {            
             //create test
             $sql = $db->prepare("INSERT INTO tests (cat_id,diff) VALUES (".$val['id'].",3)");
