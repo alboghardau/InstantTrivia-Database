@@ -31,13 +31,16 @@ $sql ->bindParam(3, $cat_id);
 $sql ->bindParam(4, $cat_name);
 $sql ->bindParam(5, $testid);
 $sql ->bindParam(6, $diff);
-//$sql->execute();
+$sql->execute();
 
 var_dump($sql);
 
 echo $sql->rowCount();
 }
 catch(PDOException $e) {echo $e->getMessage();}
+
+$sql = $db->prepare("DELETE FROM questions WHERE id=".$id);
+$sql->execute();
 
 $sql = $ans->prepare("SELECT * FROM quest ORDER BY id DESC LIMIT 1");
 $sql->execute();

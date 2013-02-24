@@ -63,7 +63,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 
                 
             <?php 
-            $sql = $db->query("SELECT * FROM questions ORDER BY id ASC LIMIT ".$_SESSION['add_page'].",20");
+            $sql = $db->query("SELECT * FROM questions ORDER BY id ASC LIMIT ".(($_SESSION['add_page']-1)*20).",20");
             
             $sql2 = $db->prepare("SELECT count(*) FROM questions");
             $sql2->execute();
