@@ -39,12 +39,12 @@ ob_start();
 $db = new PDO("sqlite:../phpliteadmin/answerit.db");
 
 //reset tests
-$sql = $db->prepare("DELETE FROM tests");
-$sql->execute();
-
+//$sql = $db->prepare("DELETE FROM tests");
+//$sql->execute();
+//
 //resete test_id in quest table
-$sql = $db->prepare("UPDATE quest SET test_id=0");
-$sql->execute();
+//$sql = $db->prepare("UPDATE quest SET test_id=0");
+//$sql->execute();
 
 
 $query_1 = $db->query("SELECT * FROM cats");
@@ -62,8 +62,11 @@ foreach ($query_1 as $val) {
     $c1 = 0;
     $query_2 = $db->query("SELECT * FROM quest WHERE diff=1 AND cat_id=".$val['id']);
     foreach ($query_2 as $val2) {
+        if($val2['test_id'] == 0)
+        {
         $easy[$c1] = $val2['id'];
         $c1++;
+        }
     }
     
     echo "Easy:".floor(sizeof($easy)/10);
@@ -94,8 +97,11 @@ foreach ($query_1 as $val) {
         $c2 = 0;
         $query_2 = $db->query("SELECT * FROM quest WHERE diff=2 AND cat_id=".$val['id']);
         foreach ($query_2 as $val2) {
-        $med[$c2] = $val2['id'];
-        $c2++;
+            if($val2['test_id'] == 0)
+            {
+            $med[$c2] = $val2['id'];
+            $c2++;
+            }
     }
     
         echo " Medium:".floor(sizeof($med)/10);
@@ -126,8 +132,11 @@ foreach ($query_1 as $val) {
         $c3 = 0;
         $query_2 = $db->query("SELECT * FROM quest WHERE diff=3 AND cat_id=".$val['id']);
         foreach ($query_2 as $val2) {
+        if($val2['test_id'] == 0)
+        {
         $hard[$c3] = $val2['id'];
         $c3++;
+        }
     }
     
         echo " Hard:".floor(sizeof($hard)/10);
