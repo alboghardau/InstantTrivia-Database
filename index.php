@@ -13,7 +13,28 @@
         <div class="row">
 
             <div class="span12 well">
-        
+                <table class="table">
+            <?php
+            include("functions.php");
+            
+            $db = new PDO("sqlite:phpliteadmin/answerit.db"); 
+            
+            $sql = $db->query("SELECT * FROM quest");
+            foreach($sql as $val)
+            {
+                if(test_chars($val['answer']) == false)
+                {
+                echo "<tr>";
+                echo "<td>".$val['answer'].'<td>';
+                echo '</tr>';
+                }
+            }
+            
+          test_chars("TES AS");
+                    
+            
+            ?>
+            </table>
             </div>
         </div>
         </div>
