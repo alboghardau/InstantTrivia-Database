@@ -20,9 +20,11 @@
                     
                     <ul class="nav navbar-nav">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="add_questions.php">Import Q</a></li>
+                        <li><a href="add_questions.php">Import Questions</a></li>
+                        <li><a href="edit_question.php">Edit Questions</a>
                         <li><a href="categories.php">Categories</a></li>
                         <li><a href="phpliteadmin/phpliteadmin.php">PHPLiteAdmin</a></li>
+                        
                         <li><a href="#"><?php 
                         
                         echo $result[0];
