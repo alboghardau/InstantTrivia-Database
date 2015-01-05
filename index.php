@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="stylesheet">
     </head>
     <body>
         

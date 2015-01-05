@@ -13,17 +13,16 @@
    
 
 
-<div class="navbar navbar-static-top" >
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="brand">Answer It Trivia Database Editor</a>
-                    <ul class="nav">
+<div class="bs-component" >
+            <div class="navbar-inverse">
+                <div class="navbar-collapse collapse navbar-inverse-collapse">
+                  
+                    
+                    <ul class="nav navbar-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="add_questions.php">Import Q</a></li>
                         <li><a href="categories.php">Categories</a></li>
-                        <li><a href="tests.php">Tests</a></li>
                         <li><a href="phpliteadmin/phpliteadmin.php">PHPLiteAdmin</a></li>
-                        <li><a href="scripts/generate_tests.php">Create tests</a></li>
                         <li><a href="#"><?php 
                         
                         echo $result[0];

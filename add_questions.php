@@ -69,7 +69,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
             $sql2->execute();
             $count = $sql2->fetch(PDO::FETCH_NUM);
             
-            echo '<center><div class="pagination"><ul>';
+            echo '<center><ul class="pagination">';
             
             for($i = $_SESSION['add_page']-8; $i < $_SESSION['add_page']+8; $i++)
             {
@@ -86,7 +86,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 }
             }
             
-            echo '</ul></div></center>';
+            echo '</ul></center>';
             
             
             echo '<table class="table table-condensed">';
