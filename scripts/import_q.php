@@ -24,13 +24,12 @@ $diff = 1;
 $testid = 0;
 
 try{
-$sql = $ans->prepare("INSERT INTO quest (question,answer,cat_id,cat_name,test_id,diff) VALUES (?,?,?,?,?,?)");
+$sql = $ans->prepare("INSERT INTO quest (question,answer,cat_id,cat_name,diff) VALUES (?,?,?,?,?)");
 $sql ->bindParam(1, $q);
 $sql ->bindParam(2, $a);
 $sql ->bindParam(3, $cat_id);
 $sql ->bindParam(4, $cat_name);
-$sql ->bindParam(5, $testid);
-$sql ->bindParam(6, $diff);
+$sql ->bindParam(5, $diff);
 $sql->execute();
 
 var_dump($sql);
