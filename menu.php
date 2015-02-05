@@ -18,6 +18,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="add_questions.php">Import Questions</a></li>
+                        <li><a href="add_questions_1.php">Import Questions 2</a></li>
                         <li><a href="edit_question.php">Edit Questions</a>
                         <li><a href="fault_questions.php">Faulty Questions</a>
                         <li><a href="categories.php">Categories</a></li>

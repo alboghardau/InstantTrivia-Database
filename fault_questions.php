@@ -30,7 +30,7 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
             echo '<table class="table table-condensed">';
             foreach ($sql as $val) {
                 
-                if(test_answer($val['answer']) == true){
+                if(test_answer($val['answer'],$val['question']) == true){
                 echo "<tr>";
                     echo '<td>'.'<a class="btn btn-danger" href="scripts/quest_del.php?id='.$val['id'].'"/>'.'</td>';
                     echo '<td>'.$val['id'].'</td>';
@@ -48,8 +48,19 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
 </html>
 
 <?php
-    function test_answer($answer){
+    function test_answer($answer,$question){
         $tester = false;
+        
+        if (strpos($question,'  ') != false) {
+            return true;
+        }
+//        if (strpos($question,"?") == false){
+//            return true;
+//        }
+        
+        if(ctype_lower($answer)){
+            return true;
+        }
         
         $array = explode(" ", $answer);
         

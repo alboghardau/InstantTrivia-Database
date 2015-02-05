@@ -35,7 +35,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                     $a = $val['answer'];
                 }
                 
-                echo '<div class="span12 well">';
+                echo '<div class="span12">';
                 
                 echo '<form class="form-inline" action="scripts/import_edit.php" method="post">
                       <input type="text" name="q" value="'.$q.'" style="width:60%"/>
@@ -92,6 +92,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
             echo '<table class="table table-condensed">';
             foreach ($sql as $val) {
                 echo "<tr>";
+                echo '<td>'.$val['category'].'</td>';
                 echo '<td>'.$val['question'].'</td>';
                 echo '<td>'.$val['answer'].'</td>';
                 echo '<td><a class="btn" href="scripts/import_q.php?id='.$val['id'].'">'."Add".'</a></td>';
