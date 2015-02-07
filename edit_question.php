@@ -18,9 +18,66 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
          <?php include("menu.php");?>
         <div class="container">
             <div class="row">
+                
+            <?php
+            
+            if(isset($_SESSION['edit_q']))
+            {
+                $sql = $db->prepare("SELECT * FROM quest WHERE id=".$_SESSION['edit_q']);
+                $sql->execute();
+                foreach($sql as $val)                    
+                {
+                    $q = $val['question'];
+                    $a = $val['answer'];
+                }
+                
+                echo '<div class="span12">';
+                
+                echo '<center><form class="form-inline" action="scripts/import_edit.php" method="post">
+                      <input type="text" name="q" value="'.$q.'" style="width:60%"/>
+                      <input type="text" name="a" value="'.$a.'"/>
+                      <input type="hidden" name="id" value="'.$_SESSION['edit_q'].' "/>
+                      <button class="btn" type="submit">Edit</button>
+                      </form></center>';
+                disp_cats($_SESSION['edit_q']);
+                disp_diff($_SESSION['edit_q']);
+                
+                echo '</div>';
+            }
+            
+            ?> 
+                
                 <div class="span12 well">
+                    <center>
+                        <form class="form-inline" action="scripts/session_set.php?action=2" method="post">
+                            <input type="text" name="q_search" value="<?php if(isset($_SESSION['q_search'])) {echo $_SESSION['q_search'];}?>"/>
+                            <button class="btn" type="submit">Search</button>                            
+                        </form>
+                    </center>
+                
           
             <?php
+            if(isset($_SESSION['q_search'])){   
+                $sql = $db->query("SELECT * FROM quest");
+                $sql->execute();
+                
+                echo '<table class="table table-condensed">';
+                foreach ($sql as $val) {               
+                    if(strpos($val['question'],$_SESSION['q_search']) == TRUE)
+                {
+                echo "<tr>";
+                echo '<td><a class="btn-xs btn-warning" href="scripts/session_set.php?action=1&id='.$val['id'].'" >Edit</a></td>';
+                echo '<td>'.$val['id'].'</td>';
+                echo '<td>'.$val['question'].'</td>';
+                echo '<td>'.$val['answer'].'</td>';
+                echo '<td>'.$val['cat_name'].'</td>';
+                echo "</tr>";
+            }    
+}
+            echo '</table>';
+                
+            }else{
+            
             $sql = $db->query("SELECT * FROM quest ORDER BY id ASC LIMIT ".(($_SESSION['edit_page']-1)*20).",20");
             
             $sql2 = $db->prepare("SELECT count(*) FROM quest");
@@ -35,28 +92,30 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
                 {
                     if($_SESSION['edit_page'] == $i)
                     {
-                        echo '<li class="active"><a href="scripts/edit_set_page.php?pg='.$i.'">'.$i."</a></li>"; 
+                       echo '<li class="active"><a href="scripts/edit_set_page.php?pg='.$i.'">'.$i."</a></li>"; 
                     }else
                     {
                        echo '<li><a href="scripts/edit_set_page.php?pg='.$i.'">'.$i."</a></li>"; 
-                    }
-                
+                    }                
                 }
             }
             
             echo '</ul></center>';
             
             echo '<table class="table table-condensed">';
-            foreach ($sql as $val) {
+            foreach ($sql as $val) {               
+
                 echo "<tr>";
+                echo '<td><a class="btn-xs btn-warning" href="scripts/session_set.php?action=1&id='.$val['id'].'" >Edit</a></td>';
                 echo '<td>'.$val['id'].'</td>';
                 echo '<td>'.$val['question'].'</td>';
                 echo '<td>'.$val['answer'].'</td>';
+                echo '<td>'.$val['cat_name'].'</td>';
                 echo "</tr>";
-    
-}
+            }    
+
             echo '</table>';
-            
+          }      
             ?>
                 </div> 
             </div>
@@ -67,5 +126,66 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
 </html>
 
 <?php
+function disp_cats($id)
+{
+    $data = new PDO("sqlite:phpliteadmin/answerit.db");
+    
+    $sql = $data->prepare("SELECT * FROM quest WHERE id=".$id);
+    $sql->execute();
+    
+    foreach($sql as $val)
+    {
+        $cat_id = $val['cat_id'];
+    }
+    
+    $sql = $data->prepare("SELECT * FROM cats");
+    $sql->execute();
+    
+    echo '<center><div class="btn_group">';
+    
+    foreach ($sql as $val) {
+        if($val['id'] == $cat_id)
+        {
+           echo '<a class="btn-xs btn-success">'.$val['name'].'</a>'; 
+        }  else {
+           echo '<a class="btn-xs" href="scripts/editors.php?action=1&cat_id='.$val['id'].'&id='.$id.'">'.$val['name'].'</a>';
+        }
+    }
+    echo '</div></center>';
+    
+    $data = null;
+}
+
+function disp_diff($id)
+{
+        $data = new PDO("sqlite:phpliteadmin/answerit.db");
+    
+    $sql = $data->prepare("SELECT * FROM quest WHERE id=".$id);
+    $sql->execute();
+    
+    foreach($sql as $val)
+    {
+        $diff = $val['diff'];
+    }
+    
+    $sql = array("Easy",'Medium',"Hard");
+    
+    echo '<center><div class="btn_group">';
+    
+    for($i = 0; $i < 3; $i++)
+    {
+        if($i+1 == $diff)
+        {
+           echo '<a class="btn btn-success">'.$sql[$i].'</a>'; 
+        }  else {
+           echo '<a class="btn" href="scripts/editors.php?action=2&diff='.($i+1).'&id='.$id.'">'.$sql[$i].'</a>';
+        }
+
+    }
+    echo '</div></center>';
+    
+    $data = null;
+}
+
     ob_flush();
 ?>
