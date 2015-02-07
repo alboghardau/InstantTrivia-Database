@@ -53,5 +53,18 @@ unset($_SESSION['cat_search']);
 
 header("Location: ../add_questions.php");
 }
+
+//set pre set diff in add question
+if($action == 6)
+{
+    $_SESSION['preset_diff'] = $_GET['diff'];
+        header("Location: ../add_questions.php");
+}
+
+//set pre set category in add question
+if($action == 7){   
+    $_SESSION['preset_cat'] = $_GET['cat_id'];
+    header("Location: ../add_questions.php");
+}
 ob_flush();
 ?>

@@ -82,6 +82,8 @@ $sql->execute();
 header("Location: ../add_questions.php");
 }
 
+
+
 ob_flush();
 
 ?>

@@ -66,7 +66,10 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 
             <?php 
             
-            if(isset($_SESSION['cat_search'])){
+            disp_cats_preset();
+            disp_diff_preset();
+            
+            if(isset($_SESSION['cat_search'])) {
                 $sql = $db->query("SELECT * FROM questions");                
                 
                 echo '<table class="table table-condensed">';
@@ -131,6 +134,52 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
 </html>
 
 <?php
+
+function disp_diff_preset()
+{
+        $data = new PDO("sqlite:phpliteadmin/answerit.db");
+    
+    $sql = array("Easy",'Medium',"Hard");
+    
+    echo '<center><div class="btn_group">';
+    
+    for($i = 0; $i < 3; $i++)
+    {
+        if(isset($_SESSION['preset_diff']) && $_SESSION['preset_diff'] == $i+1)
+        {
+           echo '<a class="btn btn-success">'.$sql[$i].'</a>'; 
+        }  else {
+           echo '<a class="btn" href="scripts/session_set.php?action=6&diff='.($i+1).'">'.$sql[$i].'</a>';
+        }
+    }
+    echo '</div></center>';
+    
+    $data = null;
+}
+
+function disp_cats_preset()
+{
+    $data = new PDO("sqlite:phpliteadmin/answerit.db");
+    
+    $sql = $data->prepare("SELECT * FROM cats");
+    $sql->execute();
+    
+    echo '<center><div class="btn_group">';
+    
+    foreach ($sql as $val) {
+        if(isset($_SESSION['preset_cat']) && $_SESSION['preset_cat'] == $val['id'])
+        {
+           echo '<a class="btn-xs btn-success">'.$val['name'].'</a>'; 
+        }  else {
+           echo '<a class="btn-xs" href="scripts/session_set.php?action=7&cat_id='.$val['id'].'">'.$val['name'].'</a>';
+        }
+
+    }
+    echo '</div></center>';
+    
+    $data = null;
+}
+
 function disp_cats($id)
 {
     $data = new PDO("sqlite:phpliteadmin/answerit.db");
