@@ -82,7 +82,34 @@ $sql->execute();
 header("Location: ../add_questions.php");
 }
 
+if($action == 5){
+$id = $_GET['id'];
 
+$db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+$sql = $db->prepare("DELETE FROM quest WHERE id=".$id);
+$sql->execute();
+
+unset($_SESSION['edit_q']);
+
+header("Location: ../edit_question.php");
+}
+
+if($action == 6){
+    $q = $_POST['q'];
+$a = $_POST['a'];
+$qid = $_POST['id'];
+$a = strtoupper($a);
+
+$db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+$sql = $db->prepare("UPDATE quest SET question= ?, answer= ? WHERE id=".$qid);
+$sql ->bindParam(1, $q);
+$sql ->bindParam(2, $a);
+$sql->execute();
+
+header("Location: ../edit_question.php");
+}
 
 ob_flush();
 

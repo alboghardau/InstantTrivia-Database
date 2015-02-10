@@ -33,7 +33,7 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
                 
                 echo '<div class="span12">';
                 
-                echo '<center><form class="form-inline" action="scripts/import_edit.php" method="post">
+                echo '<center><form class="form-inline" action="scripts/editors.php?action=6" method="post">
                       <input type="text" name="q" value="'.$q.'" style="width:60%"/>
                       <input type="text" name="a" value="'.$a.'"/>
                       <input type="hidden" name="id" value="'.$_SESSION['edit_q'].' "/>
@@ -66,6 +66,7 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
                     if(strpos($val['question'],$_SESSION['q_search']) == TRUE)
                 {
                 echo "<tr>";
+                echo '<td><a class="btn-xs btn-warning" href="scripts/editors.php?action=5&id='.$val['id'].'">Del</a></td>';
                 echo '<td><a class="btn-xs btn-warning" href="scripts/session_set.php?action=1&id='.$val['id'].'" >Edit</a></td>';
                 echo '<td>'.$val['id'].'</td>';
                 echo '<td>'.$val['question'].'</td>';
@@ -106,6 +107,7 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
             foreach ($sql as $val) {               
 
                 echo "<tr>";
+                echo '<td><a class="btn-xs btn-warning" href="scripts/editors.php?action=5&id='.$val['id'].'" >Del</a></td>';
                 echo '<td><a class="btn-xs btn-warning" href="scripts/session_set.php?action=1&id='.$val['id'].'" >Edit</a></td>';
                 echo '<td>'.$val['id'].'</td>';
                 echo '<td>'.$val['question'].'</td>';
