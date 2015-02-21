@@ -28,7 +28,11 @@
                     <input type="hidden" name="action" value="2"/>
                     <button type="submit" class="btn">Add</button>
                     </form>';
+                    
+                    
+
                     echo '</div>';
+                    
                 }
                 ?>
                 
@@ -39,20 +43,29 @@
                 </form>
                 
                 <?php
+                echo '<a class="btn btn-warning" href="scripts/editors.php?action=7" method="get">Count Questions</a>' ;
+                
                 $res = $db->query("SELECT * FROM cats");
                 echo '<table class="table table-striped">'; 
                 echo '<thead>';
-                echo '<th></th>';
-                echo '<th></th>';
+
                 echo '<th></th>';
                 echo '<th>'."ID".'</th>';
                 echo '<th>'."Name".'</th>';
+                echo '<th>'."Total No".'</th>';
+                echo '<th>'."Easy No".'</th>';
+                echo '<th>'."Med No".'</th>';
+                echo '<th>'."Hard No".'</th>';                
                 echo '</thead><tbody>';
                 foreach ($res as $val) {
                     echo '<tr>';
                     echo '<td><a class="btn btn-danger btn-small" href="scripts/cat_del.php?id='.$val['id'].'">'.'<i class="icon-remove"></i>'.'</a></td>';
                     echo '<td>'.$val['id'].'</td>';
-                    echo '<td>'.$val['name'].'<td>';
+                    echo '<td>'.$val['name'].'</td>';
+                    echo '<td>'.$val['total_no'].'</td>';
+                    echo '<td>'.$val['easy_no'].'</td>';
+                    echo '<td>'.$val['med_no'].'</td>';
+                    echo '<td>'.$val['hard_no'].'</td>';
                     echo '</tr>';
                     }
                 echo '</tbody></table>';

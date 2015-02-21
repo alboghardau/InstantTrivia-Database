@@ -111,6 +111,51 @@ $sql->execute();
 header("Location: ../edit_question.php");
 }
 
+if($action == 7){
+    
+    $db = new PDO("sqlite:../phpliteadmin/answerit.db");
+    
+    $sql = $db->query("SELECT * FROM cats");
+    
+    foreach ($sql as $val){
+        
+        $sql2 = $db->prepare("SELECT count(*) FROM quest WHERE cat_id =".$val['id']);
+        $sql2->execute();
+        $result = $sql2->fetch(PDO::FETCH_NUM);
+                
+        $sql3 = $db->prepare("UPDATE cats SET total_no = ? WHERE id=".$val['id']);
+        $sql3 ->bindParam(1, $result[0]);
+        $sql3->execute();
+        
+        $sql2 = $db->prepare("SELECT count(*) FROM quest WHERE diff = 1 AND cat_id =".$val['id']);
+        $sql2->execute();
+        $result = $sql2->fetch(PDO::FETCH_NUM);
+                
+        $sql3 = $db->prepare("UPDATE cats SET easy_no = ? WHERE id=".$val['id']);
+        $sql3 ->bindParam(1, $result[0]);
+        $sql3->execute();
+        
+                $sql2 = $db->prepare("SELECT count(*) FROM quest WHERE diff = 2 AND cat_id =".$val['id']);
+        $sql2->execute();
+        $result = $sql2->fetch(PDO::FETCH_NUM);
+                
+        $sql3 = $db->prepare("UPDATE cats SET med_no = ? WHERE id=".$val['id']);
+        $sql3 ->bindParam(1, $result[0]);
+        $sql3->execute();
+        
+                $sql2 = $db->prepare("SELECT count(*) FROM quest WHERE diff = 3 AND cat_id =".$val['id']);
+        $sql2->execute();
+        $result = $sql2->fetch(PDO::FETCH_NUM);
+                
+        $sql3 = $db->prepare("UPDATE cats SET hard_no = ? WHERE id=".$val['id']);
+        $sql3 ->bindParam(1, $result[0]);
+        $sql3->execute();
+    }
+    
+    
+    header("Location: ../categories.php");
+}
+
 ob_flush();
 
 ?>

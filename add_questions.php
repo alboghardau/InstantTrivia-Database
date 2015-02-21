@@ -66,6 +66,17 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 
             <?php 
             
+            function test_question($text){
+               $questions = array("How","Where","When","Which");
+               
+               $arr = explode(' ',trim($text));
+               if(in_array($arr[0], $questions)){
+                   return true;
+               }else{
+                   return false;
+               } 
+            }
+            
             disp_cats_preset();
             disp_diff_preset();
             
@@ -74,7 +85,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 
                 echo '<table class="table table-condensed">';
             foreach ($sql as $val) {
-                if(strpos($val['category'], $_SESSION['cat_search']) == true || $val["category"] == $_SESSION['cat_search'])
+                if((strpos($val['category'], $_SESSION['cat_search']) == true || $val["category"] == $_SESSION['cat_search']) && test_question($val['question']) == true)
                 {
                 echo "<tr>";
                 echo '<td>'.$val['id'].'</td>';
