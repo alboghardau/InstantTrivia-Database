@@ -50,6 +50,7 @@
                 echo '<thead>';
 
                 echo '<th></th>';
+                echo '<th></th>';
                 echo '<th>'."ID".'</th>';
                 echo '<th>'."Name".'</th>';
                 echo '<th>'."Total No".'</th>';
@@ -59,7 +60,8 @@
                 echo '</thead><tbody>';
                 foreach ($res as $val) {
                     echo '<tr>';
-                    echo '<td><a class="btn btn-danger btn-small" href="scripts/cat_del.php?id='.$val['id'].'">'.'<i class="icon-remove"></i>'.'</a></td>';
+                    echo '<td><a class="btn btn-danger btn-small" href="scripts/editors.php?action=8&id='.$val['id'].'">Clear</a></td>';
+                    echo '<td><a class="btn btn-danger btn-small" href="scripts/cat_del.php?id='.$val['id'].'">'.'Del'.'</a></td>';
                     echo '<td>'.$val['id'].'</td>';
                     echo '<td>'.$val['name'].'</td>';
                     echo '<td>'.$val['total_no'].'</td>';

@@ -156,6 +156,17 @@ if($action == 7){
     header("Location: ../categories.php");
 }
 
+if($action == 8){
+    $cat_id = $_GET['id'];
+    
+    $db = new PDO("sqlite:../phpliteadmin/answerit.db");
+    
+    $sql = $db->query("DELETE FROM quest WHERE cat_id = ".$cat_id);
+    
+    header("Location: ../categories.php");
+    
+}
+
 ob_flush();
 
 ?>
