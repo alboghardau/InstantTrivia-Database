@@ -1,6 +1,6 @@
 <?php
 session_start();
-$db = new PDO("sqlite:phpliteadmin/questions.db");
+$db = new PDO("sqlite:phpliteadmin/answerit.db");
 $ans = new PDO("sqlite:phpliteadmin/answerit.db");
 
 if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
@@ -51,17 +51,14 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 </div>
             <div class="span12 well">
         
-                <center>
+                <div style="text-align: center;">
                     <form class="form-inline" method="post" action="scripts/session_set.php?action=5">
                         <input type="text" name="pg"/>
                         <button class="btn "type="submit">Set Page</button>
                     </form>
-                    <form class="form-inline" method="post" action="scripts/session_set.php?action=3">
-                        <input type="text" name="cat_search" value="<?php if(isset($_SESSION['cat_search'])) echo $_SESSION['cat_search'];?>"/>
-                        <button class="btn" type="submit">Search Category</button>
-                    </form>
+
                     
-                </center>
+                </div>
                 
                 
             <?php 
@@ -80,29 +77,11 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
             disp_cats_preset();
             disp_diff_preset();
             
-            if(isset($_SESSION['cat_search'])) {
-                $sql = $db->query("SELECT * FROM questions");                
-                
-                echo '<table class="table table-condensed">';
-            foreach ($sql as $val) {
-                if((strpos($val['category'], $_SESSION['cat_search']) == true || $val["category"] == $_SESSION['cat_search']) && test_question($val['question']) == true)
-                {
-                echo "<tr>";
-                echo '<td>'.$val['id'].'</td>';
-                echo '<td>'.$val['category'].'</td>';
-                echo '<td>'.$val['question'].'</td>';
-                echo '<td>'.$val['answer'].'</td>';
-                echo '<td><a class="btn-xs btn-success" href="scripts/import_q.php?id='.$val['id'].'">'."Add".'</a></td>';
-                echo "</tr>";   
-                }
-            }
-            echo '</table>';
-                
-            }else{     
+
             
-            $sql = $db->query("SELECT * FROM questions ORDER BY id ASC LIMIT ".(($_SESSION['add_page']-1)*20).",20");
+            $sql = $db->query("SELECT * FROM question_buffer ORDER BY id ASC LIMIT ".(($_SESSION['add_page']-1)*20).",20");
             
-            $sql2 = $db->prepare("SELECT count(*) FROM questions");
+            $sql2 = $db->prepare("SELECT count(*) FROM question_buffer");
             $sql2->execute();
             $count = $sql2->fetch(PDO::FETCH_NUM);
             
@@ -114,10 +93,10 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 {
                     if($_SESSION['add_page'] == $i)
                     {
-                        echo '<li class="active"><a href="scripts/session_set.php?action=4&pg='.$i.'">'.$i."</a></li>"; 
+                        echo '<li class="active"><a href="scripts/session_set.php?action=10&pg='.$i.'">'.$i."</a></li>";
                     }else
                     {
-                       echo '<li><a href="scripts/session_set.php?action=4&pg='.$i.'">'.$i."</a></li>"; 
+                       echo '<li><a href="scripts/session_set.php?action=10&pg='.$i.'">'.$i."</a></li>";
                     }                
                 }
             }
@@ -128,14 +107,13 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
             foreach ($sql as $val) {
                 echo "<tr>";
                 echo '<td>'.$val['id'].'</td>';
-                echo '<td>'.$val['category'].'</td>';
                 echo '<td>'.$val['question'].'</td>';
                 echo '<td>'.$val['answer'].'</td>';
-                echo '<td><a class="btn-xs btn-success" href="scripts/import_q.php?id='.$val['id'].'">'."Add".'</a></td>';
+                echo '<td><a class="btn-xs btn-success" href="scripts/import_q_buff.php?id='.$val['id'].'">'."Add".'</a></td>';
                 echo "</tr>";   
             }
             echo '</table>';
-            }
+
             ?>    
                 
             </div>

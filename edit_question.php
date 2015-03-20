@@ -1,10 +1,9 @@
 <?php 
-session_start();
-ob_start();
-$db = new PDO("sqlite:phpliteadmin/answerit.db");
-if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
+    session_start();
+    ob_start();
+    $db = new PDO("sqlite:phpliteadmin/answerit.db");
+    if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,12 +32,12 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
                 
                 echo '<div class="span12">';
                 
-                echo '<center><form class="form-inline" action="scripts/editors.php?action=6" method="post">
-                      <input type="text" name="q" value="'.$q.'" style="width:60%"/>
+                echo '<div style="text-align: center;"><form class="form-inline" action="scripts/editors.php?action=6" method="post">
+                      <input type="text" name="q" value="' .$q.'" style="width:60%"/>
                       <input type="text" name="a" value="'.$a.'"/>
-                      <input type="hidden" name="id" value="'.$_SESSION['edit_q'].' "/>
+                      <input type="hidden" name="id" value="'.$_SESSION['edit_q']. ' "/>
                       <button class="btn" type="submit">Edit</button>
-                      </form></center>';
+                      </form></div>';
                 disp_cats($_SESSION['edit_q']);
                 disp_diff($_SESSION['edit_q']);
                 
@@ -48,23 +47,22 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
             ?> 
                 
                 <div class="span12 well">
-                    <center>
+                    <div style="text-align: center;">
                         <form class="form-inline" action="scripts/session_set.php?action=2" method="post">
                             <input type="text" name="q_search" value="<?php if(isset($_SESSION['q_search'])) {echo $_SESSION['q_search'];}?>"/>
                             <button class="btn" type="submit">Search</button>                            
                         </form>
-                    </center>
+                    </div>
                 
           
             <?php
             if(isset($_SESSION['q_search'])){   
-                $sql = $db->query("SELECT * FROM quest");
-                $sql->execute();
-                
-                echo '<table class="table table-condensed">';
+            $sql = $db->query("SELECT * FROM quest");
+            $sql->execute();
+
+            echo '<table class="table table-condensed">';
                 foreach ($sql as $val) {               
-                    if(strpos($val['question'],$_SESSION['q_search']) == TRUE)
-                {
+                    if(strpos($val['question'],$_SESSION['q_search']) == TRUE){
                 echo "<tr>";
                 echo '<td><a class="btn-xs btn-warning" href="scripts/editors.php?action=5&id='.$val['id'].'">Del</a></td>';
                 echo '<td><a class="btn-xs btn-warning" href="scripts/session_set.php?action=1&id='.$val['id'].'" >Edit</a></td>';
@@ -73,19 +71,18 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
                 echo '<td>'.$val['answer'].'</td>';
                 echo '<td>'.$val['cat_name'].'</td>';
                 echo "</tr>";
-            }    
-}
+                    }
+                }
             echo '</table>';
-                
+
             }else{
             
             $sql = $db->query("SELECT * FROM quest ORDER BY id ASC LIMIT ".(($_SESSION['edit_page']-1)*20).",20");
-            
             $sql2 = $db->prepare("SELECT count(*) FROM quest");
             $sql2->execute();
             $count = $sql2->fetch(PDO::FETCH_NUM);
             
-            echo '<center><ul class="pagination">';
+            echo '<div style="text-align: center;"><ul class="pagination">';
             
             for($i = $_SESSION['edit_page']-8; $i < $_SESSION['edit_page']+8; $i++)
             {
@@ -101,29 +98,24 @@ if(!isset($_SESSION['edit_page'])) {$_SESSION['edit_page'] = 1;}
                 }
             }
             
-            echo '</ul></center>';
-            
+            echo '</ul></div>';
             echo '<table class="table table-condensed">';
-            foreach ($sql as $val) {               
-
-                echo "<tr>";
-                echo '<td><a class="btn-xs btn-warning" href="scripts/editors.php?action=5&id='.$val['id'].'" >Del</a></td>';
-                echo '<td><a class="btn-xs btn-warning" href="scripts/session_set.php?action=1&id='.$val['id'].'" >Edit</a></td>';
-                echo '<td>'.$val['id'].'</td>';
-                echo '<td>'.$val['question'].'</td>';
-                echo '<td>'.$val['answer'].'</td>';
-                echo '<td>'.$val['cat_name'].'</td>';
-                echo "</tr>";
-            }    
-
+                foreach ($sql as $val) {
+                    echo "<tr>";
+                    echo '<td><a class="btn-xs btn-warning" href="scripts/editors.php?action=5&id='.$val['id'].'" >Del</a></td>';
+                    echo '<td><a class="btn-xs btn-warning" href="scripts/session_set.php?action=1&id='.$val['id'].'" >Edit</a></td>';
+                    echo '<td>'.$val['id'].'</td>';
+                    echo '<td>'.$val['question'].'</td>';
+                    echo '<td>'.$val['answer'].'</td>';
+                    echo '<td>'.$val['cat_name'].'</td>';
+                    echo "</tr>";
+                }
             echo '</table>';
-          }      
+            }
             ?>
                 </div> 
             </div>
         </div>
-        
-
     </body>
 </html>
 
@@ -160,7 +152,7 @@ function disp_cats($id)
 
 function disp_diff($id)
 {
-        $data = new PDO("sqlite:phpliteadmin/answerit.db");
+    $data = new PDO("sqlite:phpliteadmin/answerit.db");
     
     $sql = $data->prepare("SELECT * FROM quest WHERE id=".$id);
     $sql->execute();
@@ -186,8 +178,7 @@ function disp_diff($id)
     }
     echo '</div></center>';
     
-    $data = null;
-}
+    $data = null;}
 
     ob_flush();
 ?>
