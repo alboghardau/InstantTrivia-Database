@@ -152,6 +152,7 @@ if($action == 7){
     header("Location: ../categories.php");
 }
 
+//DELETE ALL QUESTIONS FROM MAIN TABLE FOR ONE CATEGORY
 if($action == 8){
     $cat_id = $_GET['id'];
     
@@ -161,6 +162,15 @@ if($action == 8){
     
     header("Location: ../categories.php");
     
+}
+
+//DELETE ALL RECORDS FROM QUESTION BUFFER TABLE
+if($action == 9){
+    $db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+    $sql = $db->query("DELETE FROM question_buffer");
+
+    header("Location: ../add_from_buffer.php");
 }
 
 ob_flush();

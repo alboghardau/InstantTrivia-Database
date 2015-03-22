@@ -70,8 +70,7 @@
 
                     Example: Who played Tris in 'Divergent' movie?
                     <form method="post" action="scripts/movie_q1.php">
-                        Movie Name <input type="text" name="name">
-                        IMDB Cast url <input type="text" name="url">
+                        moviedb.org id<input type="text" name="id">
                         <input type="submit">
                     </form>
 

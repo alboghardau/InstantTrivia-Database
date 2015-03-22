@@ -91,5 +91,20 @@ if($action == 10){
 
     header("Location: ../add_from_buffer.php");
 }
+
+//set pre set diff in add question
+if($action == 11)
+{
+    $_SESSION['preset_diff'] = $_GET['diff'];
+    header("Location: ../add_from_buffer.php");
+}
+
+//set pre set category in add question
+if($action == 12){
+    $_SESSION['preset_cat'] = $_GET['cat_id'];
+    header("Location: ../add_from_buffer.php");
+}
+
+
 ob_flush();
 ?>

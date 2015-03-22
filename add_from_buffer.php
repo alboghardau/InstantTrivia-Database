@@ -40,7 +40,10 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                       <input type="text" name="a" value="'.$a.'"/>
                       <input type="hidden" name="id" value="'.$_SESSION['edit_q'].' "/>
                       <button class="btn" type="submit">Edit</button>
-                      </form>';
+                      </form>'
+
+
+                ;
                 disp_cats($_SESSION['edit_q']);
                 disp_diff($_SESSION['edit_q']);
                 
@@ -48,18 +51,10 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
             }
             
             ?>      
-                </div>
-            <div class="span12 well">
-        
-                <div style="text-align: center;">
-                    <form class="form-inline" method="post" action="scripts/session_set.php?action=5">
-                        <input type="text" name="pg"/>
-                        <button class="btn "type="submit">Set Page</button>
-                    </form>
 
-                    
-                </div>
-                
+                <br/>
+                <a class="btn btn-danger" href="scripts/editors.php?action=9">Clear table</a>
+
                 
             <?php 
             
@@ -79,30 +74,11 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
             
 
             
-            $sql = $db->query("SELECT * FROM question_buffer ORDER BY id ASC LIMIT ".(($_SESSION['add_page']-1)*20).",20");
+            $sql = $db->query("SELECT * FROM question_buffer ORDER BY id ASC");
             
-            $sql2 = $db->prepare("SELECT count(*) FROM question_buffer");
-            $sql2->execute();
-            $count = $sql2->fetch(PDO::FETCH_NUM);
+
             
-            echo '<center><ul class="pagination">';
-            
-            for($i = $_SESSION['add_page']-8; $i < $_SESSION['add_page']+8; $i++)
-            {
-                if($i > 0 && $i < $count[0]/20)
-                {
-                    if($_SESSION['add_page'] == $i)
-                    {
-                        echo '<li class="active"><a href="scripts/session_set.php?action=10&pg='.$i.'">'.$i."</a></li>";
-                    }else
-                    {
-                       echo '<li><a href="scripts/session_set.php?action=10&pg='.$i.'">'.$i."</a></li>";
-                    }                
-                }
-            }
-            
-            echo '</ul></center>';            
-            
+
             echo '<table class="table table-condensed">';
             foreach ($sql as $val) {
                 echo "<tr>";
@@ -138,7 +114,7 @@ function disp_diff_preset()
         {
            echo '<a class="btn btn-success">'.$sql[$i].'</a>'; 
         }  else {
-           echo '<a class="btn" href="scripts/session_set.php?action=6&diff='.($i+1).'">'.$sql[$i].'</a>';
+           echo '<a class="btn" href="scripts/session_set.php?action=11&diff='.($i+1).'">'.$sql[$i].'</a>';
         }
     }
     echo '</div></center>';
@@ -160,7 +136,7 @@ function disp_cats_preset()
         {
            echo '<a class="btn-xs btn-success">'.$val['name'].'</a>'; 
         }  else {
-           echo '<a class="btn-xs" href="scripts/session_set.php?action=7&cat_id='.$val['id'].'">'.$val['name'].'</a>';
+           echo '<a class="btn-xs" href="scripts/session_set.php?action=12&cat_id='.$val['id'].'">'.$val['name'].'</a>';
         }
 
     }
