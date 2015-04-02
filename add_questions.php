@@ -127,6 +127,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
             echo '<table class="table table-condensed">';
             foreach ($sql as $val) {
                 echo "<tr>";
+                echo '<td><a href="scripts/editors.php?action=10&id='.$val['id'].'" class="btn-xs btn-danger">Del'.'</a></td>';
                 echo '<td>'.$val['id'].'</td>';
                 echo '<td>'.$val['category'].'</td>';
                 echo '<td>'.$val['question'].'</td>';

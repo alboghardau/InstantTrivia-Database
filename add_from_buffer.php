@@ -33,9 +33,9 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                     $a = $val['answer'];
                 }
                 
-                echo '<div class="span12">';
+                echo '<div class="span12 well">';
                 
-                echo '<form class="form-inline" action="scripts/import_edit.php" method="post">
+                echo '<form class="form-inline" action="scripts/import_buff.php" method="post">
                       <input type="text" name="q" value="'.$q.'" style="width:60%"/>
                       <input type="text" name="a" value="'.$a.'"/>
                       <input type="hidden" name="id" value="'.$_SESSION['edit_q'].' "/>
@@ -167,7 +167,7 @@ function disp_cats($id)
         {
            echo '<a class="btn-xs btn-success">'.$val['name'].'</a>'; 
         }  else {
-           echo '<a class="btn-xs" href="scripts/editors.php?action=3&cat_id='.$val['id'].'&id='.$id.'">'.$val['name'].'</a>';
+           echo '<a class="btn-xs" href="scripts/editors.php?action=12&cat_id='.$val['id'].'&id='.$id.'">'.$val['name'].'</a>';
         }
 
     }
@@ -178,7 +178,7 @@ function disp_cats($id)
 
 function disp_diff($id)
 {
-        $data = new PDO("sqlite:phpliteadmin/answerit.db");
+    $data = new PDO("sqlite:phpliteadmin/answerit.db");
     
     $sql = $data->prepare("SELECT * FROM quest WHERE id=".$id);
     $sql->execute();
@@ -198,7 +198,7 @@ function disp_diff($id)
         {
            echo '<a class="btn btn-success">'.$sql[$i].'</a>'; 
         }  else {
-           echo '<a class="btn" href="scripts/editors.php?action=4&diff='.($i+1).'&id='.$id.'">'.$sql[$i].'</a>';
+           echo '<a class="btn" href="scripts/editors.php?action=13&diff='.($i+1).'&id='.$id.'">'.$sql[$i].'</a>';
         }
     }
     echo '</div></center>';

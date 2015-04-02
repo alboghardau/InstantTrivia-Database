@@ -173,6 +173,72 @@ if($action == 9){
     header("Location: ../add_from_buffer.php");
 }
 
+//DELETE QUESTION FROM BASE QUESTIONS DATABASE
+if($action == 10){
+    $id = $_GET['id'];
+
+    $db = new PDO("sqlite:../phpliteadmin/questions.db");
+
+    $sql = $db->query("DELETE FROM questions WHERE id=".$id);
+
+    header("Location: ../add_questions.php");
+}
+
+//ADD SIMPLE QUESTION TO BUFFER TABLE
+if($action == 11){
+
+    $question = $_POST['question'];
+    $answer = $_POST['answer'];
+
+    $db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+    $sql = $db->prepare("INSERT INTO question_buffer (question,answer) VALUES (?,?)");
+    $sql ->bindParam(1, $question);
+    $sql ->bindParam(2, $answer);
+    $sql->execute();
+
+    header("Location: ../special_add.php");
+}
+
+//BUFFER QUESTIONS SET CAT FOR EDIT
+if($action == 12){
+    $catid = $_GET['cat_id'];
+    $qid = $_GET['id'];
+
+    $db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+    $sql = $db->prepare("SELECT * FROM cats WHERE id=".$catid);
+    $sql->execute();
+
+    foreach($sql as $val){
+        $catname = $val['name'];
+    }
+
+    $sql = $db->prepare("UPDATE quest SET cat_id= ?, cat_name=? WHERE id=".$qid);
+    $sql ->bindParam(1, $catid);
+    $sql ->bindParam(2, $catname);
+    $sql->execute();
+
+    header("Location: ../add_from_buffer.php");
+}
+
+//BUFFER QUESTIONS SET DIFF FOR EDIT
+if($action == 13){
+    $d = $_GET['diff'];
+    $qid = $_GET['id'];
+
+    $db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+    $sql = $db->prepare("UPDATE quest SET diff= ? WHERE id=".$qid);
+    $sql ->bindParam(1, $d);
+
+    $sql->execute();
+
+    header("Location: ../add_from_buffer.php");
+}
+
+
+
 ob_flush();
 
 ?>
