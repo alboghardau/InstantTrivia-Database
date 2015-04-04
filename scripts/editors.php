@@ -237,6 +237,16 @@ if($action == 13){
     header("Location: ../add_from_buffer.php");
 }
 
+//DELETE QUESTION FROM BUFFER TABLE MAIN DATABASE
+if($action == 14){
+    $id = $_GET['id'];
+
+    $db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+    $sql = $db->query("DELETE FROM question_buffer WHERE id=".$id);
+
+    header("Location: ../add_from_buffer.php");
+}
 
 
 ob_flush();

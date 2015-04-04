@@ -85,6 +85,7 @@ if(!isset($_SESSION['add_page'])) {$_SESSION['add_page'] = 0;}
                 echo '<td>'.$val['id'].'</td>';
                 echo '<td>'.$val['question'].'</td>';
                 echo '<td>'.$val['answer'].'</td>';
+                echo '<td><a class="btn-xs btn-danger" href="scripts/editors.php?action=14&id='.$val['id'].'">'."Del".'</a></td>';
                 echo '<td><a class="btn-xs btn-success" href="scripts/import_q_buff.php?id='.$val['id'].'">'."Add".'</a></td>';
                 echo "</tr>";   
             }
