@@ -4,6 +4,9 @@
 $id = $_POST['id'];
 $ratio = $_POST['ratio'];
 
+file_put_contents('testfile.txt',$id." / ".$ratio);
+
+
 $data = new PDO("sqlite:../phpliteadmin/o_answerit.db");
 
 $sql = $data->prepare("SELECT * FROM question_difficulty WHERE id=".$id);
@@ -12,10 +15,11 @@ $rows = $sql->fetch(PDO::FETCH_NUM);
 
 if($rows[0] == 0){      //val nu este in tabel
 
-    $sql2 = $data->prepare("INSERT INTO question_difficulty (times_played,diff_ratio) VALUES (?,?)");
+    $sql2 = $data->prepare("INSERT INTO question_difficulty (id,times_played,diff_ratio) VALUES (?,?,?)");
     $times = 1;
-    $sql2 -> bindParam(1, $times);
-    $sql2 -> bindParam(2, $ratio);
+    $sql2 -> bindParam(1, $id);
+    $sql2 -> bindParam(2, $times);
+    $sql2 -> bindParam(3, $ratio);
     $sql2 -> execute();
 
 }else{                  //val este in tabel
