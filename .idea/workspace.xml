@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a26caaba-b709-41f7-a10e-f1b674b18cf1" name="Default" comment="" />
+    <ignored path="AnswyDatabase.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="AnswyDatabase" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="q3_geography.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/q3_geography.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39977604" vertical-offset="0" max-vertical-offset="3553">
+              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+              <folding>
+                <marker date="1428583822513" expanded="true" signature="182:201" placeholder="SELECT * FRO..questWHERE..." />
+                <marker date="1428583822513" expanded="true" signature="308:337" placeholder="SELECT * FRO..question_buffer..." />
+                <marker date="1428583822513" expanded="true" signature="5392:5450" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fault_questions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fault_questions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1411">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+              <folding>
+                <marker date="1423165036854" expanded="true" signature="676:695" placeholder="SELECT * FRO..quest..." />
+                <marker date="1423165036854" expanded="true" signature="746:772" placeholder="SELECT count..quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="q2_music.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/q2_music.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1292">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="43" />
+              <folding>
+                <marker date="1428269388231" expanded="true" signature="1259:1317" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_questions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add_questions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="4488">
+              <caret line="164" column="9" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+              <folding>
+                <marker date="1427629349459" expanded="true" signature="793:822" placeholder="SELECT * FRO..quest..." />
+                <marker date="1427629349459" expanded="true" signature="1210:1550" placeholder="..." />
+                <marker date="1427629349459" expanded="false" signature="1284:1293" placeholder="..." />
+                <marker date="1427629349459" expanded="true" signature="3089:3112" placeholder="SELECT * FRO..questions..." />
+                <marker date="1427629349459" expanded="true" signature="3975:4058" placeholder="SELECT * FRO..questions..." />
+                <marker date="1427629349459" expanded="true" signature="4109:4139" placeholder="SELECT count..questions..." />
+                <marker date="1427629349459" expanded="true" signature="6435:6453" placeholder="SELECT * FRO..cats..." />
+                <marker date="1427629349459" expanded="true" signature="7049:7078" placeholder="SELECT * FRO..quest..." />
+                <marker date="1427629349459" expanded="true" signature="7216:7234" placeholder="SELECT * FRO..cats..." />
+                <marker date="1427629349459" expanded="true" signature="7791:7820" placeholder="SELECT * FRO..quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="record_play.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/o_scripts/record_play.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="867">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="56" />
+              <folding>
+                <marker date="1428183135075" expanded="true" signature="190:233" placeholder="SELECT * FRO..question_difficulty..." />
+                <marker date="1428183135075" expanded="true" signature="372:447" placeholder="INSERT INTO ..." />
+                <marker date="1428183135075" expanded="true" signature="667:710" placeholder="SELECT * FRO..question_difficulty..." />
+                <marker date="1428183135075" expanded="true" signature="950:1019" placeholder="UPDATE quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editors.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/editors.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3527" max-vertical-offset="4420">
+              <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="47" />
+              <folding>
+                <marker date="1428010252786" expanded="true" signature="261:289" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428010252786" expanded="true" signature="414:462" placeholder="UPDATE quest..." />
+                <marker date="1428010252786" expanded="true" signature="799:833" placeholder="UPDATE quest..." />
+                <marker date="1428010252786" expanded="true" signature="1132:1160" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428010252786" expanded="true" signature="1285:1333" placeholder="UPDATE quest..." />
+                <marker date="1428010252786" expanded="true" signature="1665:1699" placeholder="UPDATE quest..." />
+                <marker date="1428010252786" expanded="true" signature="1934:1961" placeholder="DELETE FROM ..." />
+                <marker date="1428010252786" expanded="true" signature="2269:2318" placeholder="UPDATE quest..." />
+                <marker date="1428010252786" expanded="true" signature="2594:2612" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428010252786" expanded="true" signature="2688:2729" placeholder="SELECT count..quest..." />
+                <marker date="1428010252786" expanded="true" signature="2865:2903" placeholder="UPDATE cats ..." />
+                <marker date="1428010252786" expanded="true" signature="3025:3079" placeholder="SELECT count..quest..." />
+                <marker date="1428010252786" expanded="true" signature="3215:3252" placeholder="UPDATE cats ..." />
+                <marker date="1428010252786" expanded="true" signature="3374:3428" placeholder="SELECT count..quest..." />
+                <marker date="1428010252786" expanded="true" signature="3564:3600" placeholder="UPDATE cats ..." />
+                <marker date="1428010252786" expanded="true" signature="3714:3768" placeholder="SELECT count..quest..." />
+                <marker date="1428010252786" expanded="true" signature="3904:3941" placeholder="UPDATE cats ..." />
+                <marker date="1428010252786" expanded="true" signature="4267:4300" placeholder="DELETE FROM ..." />
+                <marker date="1428010252786" expanded="true" signature="4515:4542" placeholder="DELETE FROM ..." />
+                <marker date="1428010252786" expanded="true" signature="4770:4801" placeholder="DELETE FROM ..." />
+                <marker date="1428010252786" expanded="true" signature="5069:5127" placeholder="INSERT INTO ..." />
+                <marker date="1428010252786" expanded="true" signature="5463:5491" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428010252786" expanded="true" signature="5616:5664" placeholder="UPDATE quest..." />
+                <marker date="1428010252786" expanded="true" signature="6002:6036" placeholder="UPDATE quest..." />
+                <marker date="1428010252786" expanded="true" signature="6322:6359" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quest_add.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/quest_add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="731">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <marker date="1422710683584" expanded="true" signature="209:238" placeholder="SELECT * FRO..tests..." />
+                <marker date="1422710683584" expanded="true" signature="354:382" placeholder="SELECT * FRO..cats..." />
+                <marker date="1422710683584" expanded="true" signature="475:560" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_from_buffer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add_from_buffer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="3706">
+              <caret line="87" column="91" selection-start-line="87" selection-start-column="91" selection-end-line="87" selection-end-column="91" />
+              <folding>
+                <marker date="1428010311602" expanded="true" signature="792:821" placeholder="SELECT * FRO..quest..." />
+                <marker date="1428010311602" expanded="true" signature="1214:1554" placeholder="..." />
+                <marker date="1428010311602" expanded="false" signature="1288:1297" placeholder="..." />
+                <marker date="1428010311602" expanded="true" signature="2412:2457" placeholder="SELECT * FRO..question_buffer..." />
+                <marker date="1428010311602" expanded="true" signature="2412:2459" placeholder="SELECT * FRO..question_buffer..." />
+                <marker date="1428010311602" expanded="true" signature="3911:3929" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428010311602" expanded="true" signature="4526:4555" placeholder="SELECT * FRO..quest..." />
+                <marker date="1428010311602" expanded="true" signature="4693:4711" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428010311602" expanded="true" signature="5265:5294" placeholder="SELECT * FRO..quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import_buff.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/import_buff.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
+              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <folding>
+                <marker date="1427834088053" expanded="true" signature="190:239" placeholder="UPDATE quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/import_edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="2" />
+              <folding>
+                <marker date="1422710683573" expanded="true" signature="190:239" placeholder="UPDATE quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/edit_question.php" />
+        <option value="$PROJECT_DIR$/scripts/import_q.php" />
+        <option value="$PROJECT_DIR$/scripts/import_q_buff.php" />
+        <option value="$PROJECT_DIR$/menu.php" />
+        <option value="$PROJECT_DIR$/scripts/movie_q1.php" />
+        <option value="$PROJECT_DIR$/add_questions.php" />
+        <option value="$PROJECT_DIR$/special_add.php" />
+        <option value="$PROJECT_DIR$/scripts/session_set.php" />
+        <option value="$PROJECT_DIR$/scripts/import_buff.php" />
+        <option value="$PROJECT_DIR$/scripts/editors.php" />
+        <option value="$PROJECT_DIR$/add_from_buffer.php" />
+        <option value="$PROJECT_DIR$/o_scripts/record_play.php" />
+        <option value="$PROJECT_DIR$/scripts/q2_music.php" />
+        <option value="$PROJECT_DIR$/scripts/q3_geography.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="AnswyDatabase">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="AnswyDatabase">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="scripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="AnswyDatabase">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="phpliteadmin">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="AnswyDatabase">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="o_scripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\projects\AnswyDatabase\scripts" />
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\projects\AnswyDatabase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\projects\AnswyDatabase\scripts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a26caaba-b709-41f7-a10e-f1b674b18cf1" name="Default" comment="" />
+      <created>1426767395005</created>
+      <option name="number" value="Default" />
+      <updated>1426767395005</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Special question generator added">
+      <created>1426867746884</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1426867746884</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Special question generator added">
+      <created>1427049631273</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1427049631273</updated>
+    </task>
+    <task id="LOCAL-00003" summary="sync">
+      <created>1427215535969</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1427215535969</updated>
+    </task>
+    <task id="LOCAL-00004" summary="sync">
+      <created>1427980099930</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1427980099930</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New changelist">
+      <created>1427980187398</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1427980187398</updated>
+    </task>
+    <task id="LOCAL-00006" summary="sync">
+      <created>1428156013175</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1428156013175</updated>
+    </task>
+    <task id="LOCAL-00007" summary="sync">
+      <created>1428326404505</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1428326404505</updated>
+    </task>
+    <task id="LOCAL-00008" summary="lots of changes">
+      <created>1428856571971</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1428856571971</updated>
+    </task>
+    <task id="LOCAL-00009" summary="sync">
+      <created>1430734949302</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1430734949302</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Special question generator added" />
+    <MESSAGE value="New changelist" />
+    <MESSAGE value="lots of changes" />
+    <MESSAGE value="sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/add_from_buffer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="773" max-vertical-offset="4097">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <marker date="1428010311602" expanded="true" signature="792:821" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="1214:1554" placeholder="..." />
+            <marker date="1428010311602" expanded="false" signature="1288:1297" placeholder="..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2457" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2459" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="3911:3929" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="4526:4555" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="4693:4711" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="5265:5294" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_q.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1309">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_q_buff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1309">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/editors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="2958">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/special_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1513">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/session_set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1700">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/movie_q1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1496">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2652" max-vertical-offset="4471">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1427629349459" expanded="true" signature="793:822" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="1210:1550" placeholder="..." />
+            <marker date="1427629349459" expanded="false" signature="1284:1293" placeholder="..." />
+            <marker date="1427629349459" expanded="true" signature="3089:3112" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="3975:4058" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="4109:4139" placeholder="SELECT count..questions..." />
+            <marker date="1427629349459" expanded="true" signature="6435:6453" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7049:7078" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="7216:7234" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7791:7820" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_from_buffer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="773" max-vertical-offset="4097">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <marker date="1428010311602" expanded="true" signature="792:821" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="1214:1554" placeholder="..." />
+            <marker date="1428010311602" expanded="false" signature="1288:1297" placeholder="..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2457" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2459" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="3911:3929" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="4526:4555" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="4693:4711" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="5265:5294" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_q.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1309">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_q_buff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1309">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/editors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="2958">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/special_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1513">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/session_set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1700">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/movie_q1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1496">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2652" max-vertical-offset="4471">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1427629349459" expanded="true" signature="793:822" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="1210:1550" placeholder="..." />
+            <marker date="1427629349459" expanded="false" signature="1284:1293" placeholder="..." />
+            <marker date="1427629349459" expanded="true" signature="3089:3112" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="3975:4058" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="4109:4139" placeholder="SELECT count..questions..." />
+            <marker date="1427629349459" expanded="true" signature="6435:6453" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7049:7078" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="7216:7234" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7791:7820" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_from_buffer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="773" max-vertical-offset="4097">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <marker date="1428010311602" expanded="true" signature="792:821" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="1214:1554" placeholder="..." />
+            <marker date="1428010311602" expanded="false" signature="1288:1297" placeholder="..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2457" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2459" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="3911:3929" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="4526:4555" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="4693:4711" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="5265:5294" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/editors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="2958">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3213">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/special_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1513">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/session_set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1513">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/movie_q1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="1258">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="731">
+          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="4471">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="191" selection-end-column="1" />
+          <folding>
+            <marker date="1427629349459" expanded="true" signature="793:822" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="1210:1550" placeholder="..." />
+            <marker date="1427629349459" expanded="false" signature="1284:1293" placeholder="..." />
+            <marker date="1427629349459" expanded="true" signature="3089:3112" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="3975:4058" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="4109:4139" placeholder="SELECT count..questions..." />
+            <marker date="1427629349459" expanded="true" signature="6435:6453" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7049:7078" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="7216:7234" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7791:7820" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_q.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3213">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/simple_html_dom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="29053">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_q.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1309">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="748">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_q_buff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9619261" vertical-offset="59" max-vertical-offset="1309">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/edit_set_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/add_set_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/session_set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="1972">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/special_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="816">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_buff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding>
+            <marker date="1427834088053" expanded="true" signature="190:239" placeholder="UPDATE quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/import_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="2" />
+          <folding>
+            <marker date="1422710683573" expanded="true" signature="190:239" placeholder="UPDATE quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/quest_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="731">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1422710683584" expanded="true" signature="209:238" placeholder="SELECT * FRO..tests..." />
+            <marker date="1422710683584" expanded="true" signature="354:382" placeholder="SELECT * FRO..cats..." />
+            <marker date="1422710683584" expanded="true" signature="475:560" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_from_buffer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="3706">
+          <caret line="87" column="91" selection-start-line="87" selection-start-column="91" selection-end-line="87" selection-end-column="91" />
+          <folding>
+            <marker date="1428010311602" expanded="true" signature="792:821" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="1214:1554" placeholder="..." />
+            <marker date="1428010311602" expanded="false" signature="1288:1297" placeholder="..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2457" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="2412:2459" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428010311602" expanded="true" signature="3911:3929" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="4526:4555" placeholder="SELECT * FRO..quest..." />
+            <marker date="1428010311602" expanded="true" signature="4693:4711" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010311602" expanded="true" signature="5265:5294" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/movie_q1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2295">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/editors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3527" max-vertical-offset="4420">
+          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="47" />
+          <folding>
+            <marker date="1428010252786" expanded="true" signature="261:289" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010252786" expanded="true" signature="414:462" placeholder="UPDATE quest..." />
+            <marker date="1428010252786" expanded="true" signature="799:833" placeholder="UPDATE quest..." />
+            <marker date="1428010252786" expanded="true" signature="1132:1160" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010252786" expanded="true" signature="1285:1333" placeholder="UPDATE quest..." />
+            <marker date="1428010252786" expanded="true" signature="1665:1699" placeholder="UPDATE quest..." />
+            <marker date="1428010252786" expanded="true" signature="1934:1961" placeholder="DELETE FROM ..." />
+            <marker date="1428010252786" expanded="true" signature="2269:2318" placeholder="UPDATE quest..." />
+            <marker date="1428010252786" expanded="true" signature="2594:2612" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010252786" expanded="true" signature="2688:2729" placeholder="SELECT count..quest..." />
+            <marker date="1428010252786" expanded="true" signature="2865:2903" placeholder="UPDATE cats ..." />
+            <marker date="1428010252786" expanded="true" signature="3025:3079" placeholder="SELECT count..quest..." />
+            <marker date="1428010252786" expanded="true" signature="3215:3252" placeholder="UPDATE cats ..." />
+            <marker date="1428010252786" expanded="true" signature="3374:3428" placeholder="SELECT count..quest..." />
+            <marker date="1428010252786" expanded="true" signature="3564:3600" placeholder="UPDATE cats ..." />
+            <marker date="1428010252786" expanded="true" signature="3714:3768" placeholder="SELECT count..quest..." />
+            <marker date="1428010252786" expanded="true" signature="3904:3941" placeholder="UPDATE cats ..." />
+            <marker date="1428010252786" expanded="true" signature="4267:4300" placeholder="DELETE FROM ..." />
+            <marker date="1428010252786" expanded="true" signature="4515:4542" placeholder="DELETE FROM ..." />
+            <marker date="1428010252786" expanded="true" signature="4770:4801" placeholder="DELETE FROM ..." />
+            <marker date="1428010252786" expanded="true" signature="5069:5127" placeholder="INSERT INTO ..." />
+            <marker date="1428010252786" expanded="true" signature="5463:5491" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428010252786" expanded="true" signature="5616:5664" placeholder="UPDATE quest..." />
+            <marker date="1428010252786" expanded="true" signature="6002:6036" placeholder="UPDATE quest..." />
+            <marker date="1428010252786" expanded="true" signature="6322:6359" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fault_questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1411">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+          <folding>
+            <marker date="1423165036854" expanded="true" signature="676:695" placeholder="SELECT * FRO..quest..." />
+            <marker date="1423165036854" expanded="true" signature="746:772" placeholder="SELECT count..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="4488">
+          <caret line="164" column="9" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+          <folding>
+            <marker date="1427629349459" expanded="true" signature="793:822" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="1210:1550" placeholder="..." />
+            <marker date="1427629349459" expanded="false" signature="1284:1293" placeholder="..." />
+            <marker date="1427629349459" expanded="true" signature="3089:3112" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="3975:4058" placeholder="SELECT * FRO..questions..." />
+            <marker date="1427629349459" expanded="true" signature="4109:4139" placeholder="SELECT count..questions..." />
+            <marker date="1427629349459" expanded="true" signature="6435:6453" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7049:7078" placeholder="SELECT * FRO..quest..." />
+            <marker date="1427629349459" expanded="true" signature="7216:7234" placeholder="SELECT * FRO..cats..." />
+            <marker date="1427629349459" expanded="true" signature="7791:7820" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/o_scripts/record_play.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="867">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="56" />
+          <folding>
+            <marker date="1428183135075" expanded="true" signature="190:233" placeholder="SELECT * FRO..question_difficulty..." />
+            <marker date="1428183135075" expanded="true" signature="372:447" placeholder="INSERT INTO ..." />
+            <marker date="1428183135075" expanded="true" signature="667:710" placeholder="SELECT * FRO..question_difficulty..." />
+            <marker date="1428183135075" expanded="true" signature="950:1019" placeholder="UPDATE quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/q2_music.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1292">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="43" />
+          <folding>
+            <marker date="1428269388231" expanded="true" signature="1259:1317" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/q3_geography.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39977604" vertical-offset="0" max-vertical-offset="3553">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+          <folding>
+            <marker date="1428583822513" expanded="true" signature="182:201" placeholder="SELECT * FRO..questWHERE..." />
+            <marker date="1428583822513" expanded="true" signature="308:337" placeholder="SELECT * FRO..question_buffer..." />
+            <marker date="1428583822513" expanded="true" signature="5392:5450" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
