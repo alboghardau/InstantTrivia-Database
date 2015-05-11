@@ -9,7 +9,11 @@ $sql = $data->prepare("SELECT * FROM quest WHERE time_stamp > ".$receivedTimeSta
 $sql->execute();
 $sql->setFetchMode(PDO::FETCH_OBJ);
 
-$json = json_encode(array('questions' => $sql->fetchAll()));
+$sql2 = $data->prepare("SELECT * FROM question_deleted WHERE time_stamp > ".$receivedTimeStamp);
+$sql2->execute();
+$sql2->setFetchMode(PDO::FETCH_OBJ);
+
+$json = json_encode(array('questions' => $sql->fetchAll(), 'deleted' => $sql2->fetchAll()));
 echo $json;
 
  
