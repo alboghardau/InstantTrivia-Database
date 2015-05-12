@@ -1,8 +1,8 @@
 <?php
 //GENERATE JSON RESPONSE FOR UPDATE REQUEST
-//$receivedTimeStamp = $_POST['time'];
+$receivedTimeStamp = $_POST['time'];
 
-$receivedTimeStamp = 20150400000000;
+//$receivedTimeStamp = 20150400000000;
 
 $data = new PDO("sqlite:../phpliteadmin/answerit.db");
 $sql = $data->prepare("SELECT * FROM quest WHERE time_stamp > ".$receivedTimeStamp);
