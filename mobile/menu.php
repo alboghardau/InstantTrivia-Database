@@ -1,17 +1,11 @@
 <nav>
   <ul class="left hide-on-med-and-down">
-    <li><a href="#!">Import Questions</a></li>
-    <li><a href="#!">Buffer Questions</a></li>
-    <li><a href="questions_edit.php">Edit Questions</a></li>
-    <li><a href="#!">Faulty Questions</a></li>
-    <li><a href="#!">Categories</a></li>
+    <li><a href="import_from_db.php">Import Questions</a></li>
+
   </ul>
   <ul id="slide-out" class="side-nav">
-    <li><a href="#!">Import Questions</a></li>
-    <li><a href="#!">Buffer Questions</a></li>
-    <li><a href="questions_edit.php">Edit Questions</a></li>
-    <li><a href="#!">Faulty Questions</a></li>
-    <li><a href="#!">Categories</a></li>
+    <li><a href="import_from_db.php">Import Questions</a></li>
+
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 </nav>

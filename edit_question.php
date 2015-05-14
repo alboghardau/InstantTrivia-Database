@@ -150,8 +150,7 @@ function disp_cats($id)
     $data = null;
 }
 
-function disp_diff($id)
-{
+function disp_diff($id){
     $data = new PDO("sqlite:phpliteadmin/answerit.db");
     
     $sql = $data->prepare("SELECT * FROM quest WHERE id=".$id);
@@ -178,7 +177,8 @@ function disp_diff($id)
     }
     echo '</div></center>';
     
-    $data = null;}
+    $data = null;
+}
 
     ob_flush();
 ?>
