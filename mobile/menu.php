@@ -1,4 +1,4 @@
-<nav>
+<nav class="red">
   <ul class="left hide-on-med-and-down">
     <li><a href="import_from_db.php">Import Questions</a></li>
 

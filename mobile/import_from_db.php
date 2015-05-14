@@ -22,43 +22,71 @@
  
         <?php include 'menu.php'; ?>
         <br/>
-        <div class="row container">
-            <div class="card">
-                <div class="card-content red white-text">
+
 
                     <?php
-                    
-                     $sql = $db->query("SELECT * FROM questions ORDER BY RANDOM() LIMIT 1");
-                     foreach ($sql as $val){
-                         echo '<span class="card-title">'.$val['category']."</span>";
-                         echo "<p>".$val['question']."</p>";
-                         echo "<h5>".$val['answer']."</h5>";
-                         
-                     }
+
+    if(isset($_SESSION['mobile_added_id'])){
+
+    }else{
+
+    echo '
+    <div class="row">
+        <div class="col s12">
+            <div class="card red">
+                <div class="card-content white-text">';
+
+                    $sql = $db->query("SELECT * FROM questions ORDER BY RANDOM() LIMIT 1");
+                    foreach ($sql as $val){
+                        echo '<span class="card-title">'.$val['category']."</span>";
+                        echo "<p>".$val['question']."</p>";
+                        echo "<h5>".$val['answer']."</h5>";
+                        $id = $val['id'];
+                    }
+    echo '
+        </div>
+            <div class="card-action">
+                <a class="btn white red-text" href="#">Delete</a>
+                <a class="btn white red-text" href="scripts/import_q.php?id='.$id.'">Add</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+                    ';
+                    }
+
+
+
                     
                     ?>
-              <div class="card-action">
-              <a class="btn white" href="#">Delete</a>
-              <a class="btn white" href='#'>Add</a>
-            </div>
+
+
+        <div class="row">
+            <div class="col s12">
+                <div class="card red">
+                    <div class="card-content">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input placeholder="Question" id="first_name" type="text" class="white-text">
+                                </div>
+                                <div class="input-field col s12">
+                                    <input placeholder="Answer" id="last_name" type="text" class="white-text">
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="submit" type="submit" class="btn col s12 white red-text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href='#'>This is a link</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+
 
 
         
