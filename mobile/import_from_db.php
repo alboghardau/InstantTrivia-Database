@@ -26,9 +26,6 @@
 
                     <?php
 
-    if(isset($_SESSION['mobile_added_id'])){
-
-    }else{
 
     echo '
     <div class="row">
@@ -54,7 +51,7 @@
 
     </div>
                     ';
-                    }
+
 
 
 
@@ -62,27 +59,7 @@
                     ?>
 
 
-        <div class="row">
-            <div class="col s12">
-                <div class="card red">
-                    <div class="card-content">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input placeholder="Question" id="first_name" type="text" class="white-text">
-                                </div>
-                                <div class="input-field col s12">
-                                    <input placeholder="Answer" id="last_name" type="text" class="white-text">
-                                </div>
-                                <div class="input-field col s12">
-                                    <input id="submit" type="submit" class="btn col s12 white red-text">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
 
 

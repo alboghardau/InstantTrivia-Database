@@ -68,9 +68,9 @@ $sql = $ans->prepare("SELECT * FROM quest ORDER BY id DESC LIMIT 1");
 $sql->execute();
 foreach($sql as $val)
 {
-    $_SESSION['edit_q'] = $val['id'];
+    $id = $val['id'];
 }
 
-header("Location: ../import_from_db.php");
+header("Location: ../import_from_db.php?id=".$id);
 ob_flush();
 ?>
