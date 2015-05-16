@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a26caaba-b709-41f7-a10e-f1b674b18cf1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/mobile_edit_q.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/import_from_db.php" afterPath="$PROJECT_DIR$/mobile/import_from_db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/scripts/import_q.php" afterPath="$PROJECT_DIR$/mobile/scripts/import_q.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/scripts/editors.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpliteadmin/answerit.db" afterPath="$PROJECT_DIR$/phpliteadmin/answerit.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/mobile_edit_q.php" afterPath="$PROJECT_DIR$/mobile/mobile_edit_q.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AnswyDatabase.iws" />
@@ -33,29 +33,86 @@
       <file leaf-file-name="import_from_db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/import_from_db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.461538" vertical-offset="153" max-vertical-offset="1292">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="918" max-vertical-offset="1368">
               <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile_edit_q.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/mobile_edit_q.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.62963" vertical-offset="1441" max-vertical-offset="2538">
+              <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
               <folding>
-                <marker date="1431775623592" expanded="true" signature="782:901" placeholder="..." />
-                <marker date="1431775623592" expanded="true" signature="812:901" placeholder="..." />
-                <marker date="1431775623592" expanded="true" signature="847:901" placeholder="..." />
-                <marker date="1431775623592" expanded="true" signature="945:994" placeholder="SELECT * FRO..questions..." />
-                <marker date="1431775623592" expanded="true" signature="1373:1551" placeholder="..." />
+                <marker date="1431786702190" expanded="true" signature="131:160" placeholder="SELECT * FRO..quest..." />
+                <marker date="1431786702190" expanded="true" signature="415:444" placeholder="SELECT * FRO..quest..." />
+                <marker date="1431786702190" expanded="true" signature="574:592" placeholder="SELECT * FRO..cats..." />
+                <marker date="1431786702190" expanded="true" signature="1187:1216" placeholder="SELECT * FRO..quest..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile_edit_q.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobile/mobile_edit_q.php">
+      <file leaf-file-name="editors.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile/scripts/editors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6099537" vertical-offset="102" max-vertical-offset="2329">
-              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.8356164" vertical-offset="402" max-vertical-offset="1314">
+              <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
               <folding>
-                <marker date="1431776770882" expanded="true" signature="131:160" placeholder="SELECT * FRO..quest..." />
-                <marker date="1431776770882" expanded="true" signature="415:444" placeholder="SELECT * FRO..quest..." />
-                <marker date="1431776770882" expanded="true" signature="574:592" placeholder="SELECT * FRO..cats..." />
-                <marker date="1431776770882" expanded="true" signature="1163:1192" placeholder="SELECT * FRO..quest..." />
+                <marker date="1431785394448" expanded="true" signature="301:329" placeholder="SELECT * FRO..cats..." />
+                <marker date="1431785394448" expanded="true" signature="454:516" placeholder="UPDATE quest..." />
+                <marker date="1431785394448" expanded="true" signature="899:948" placeholder="UPDATE quest..." />
+                <marker date="1431785394448" expanded="true" signature="1323:1384" placeholder="UPDATE quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quest_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/quest_edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="450">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="49" />
+              <folding>
+                <marker date="1427983411290" expanded="true" signature="237:284" placeholder="UPDATE quest..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editors.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/editors.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.111111" vertical-offset="3804" max-vertical-offset="4680">
+              <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+              <folding>
+                <marker date="1428156661306" expanded="true" signature="261:289" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428156661306" expanded="true" signature="414:462" placeholder="UPDATE quest..." />
+                <marker date="1428156661306" expanded="true" signature="799:833" placeholder="UPDATE quest..." />
+                <marker date="1428156661306" expanded="true" signature="1132:1160" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428156661306" expanded="true" signature="1285:1333" placeholder="UPDATE quest..." />
+                <marker date="1428156661306" expanded="true" signature="1665:1699" placeholder="UPDATE quest..." />
+                <marker date="1428156661306" expanded="true" signature="1934:1961" placeholder="DELETE FROM ..." />
+                <marker date="1428156661306" expanded="true" signature="2269:2318" placeholder="UPDATE quest..." />
+                <marker date="1428156661306" expanded="true" signature="2594:2612" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428156661306" expanded="true" signature="2688:2729" placeholder="SELECT count..quest..." />
+                <marker date="1428156661306" expanded="true" signature="2865:2903" placeholder="UPDATE cats ..." />
+                <marker date="1428156661306" expanded="true" signature="3025:3079" placeholder="SELECT count..quest..." />
+                <marker date="1428156661306" expanded="true" signature="3215:3252" placeholder="UPDATE cats ..." />
+                <marker date="1428156661306" expanded="true" signature="3374:3428" placeholder="SELECT count..quest..." />
+                <marker date="1428156661306" expanded="true" signature="3564:3600" placeholder="UPDATE cats ..." />
+                <marker date="1428156661306" expanded="true" signature="3714:3768" placeholder="SELECT count..quest..." />
+                <marker date="1428156661306" expanded="true" signature="3904:3941" placeholder="UPDATE cats ..." />
+                <marker date="1428156661306" expanded="true" signature="4267:4300" placeholder="DELETE FROM ..." />
+                <marker date="1428156661306" expanded="true" signature="4515:4542" placeholder="DELETE FROM ..." />
+                <marker date="1428156661306" expanded="true" signature="4770:4801" placeholder="DELETE FROM ..." />
+                <marker date="1428156661306" expanded="true" signature="5069:5127" placeholder="INSERT INTO ..." />
+                <marker date="1428156661306" expanded="true" signature="5463:5491" placeholder="SELECT * FRO..cats..." />
+                <marker date="1428156661306" expanded="true" signature="5616:5664" placeholder="UPDATE quest..." />
+                <marker date="1428156661306" expanded="true" signature="6002:6036" placeholder="UPDATE quest..." />
+                <marker date="1428156661306" expanded="true" signature="6322:6359" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -64,18 +121,8 @@
       <file leaf-file-name="record_play.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/o_scripts/record_play.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="867">
+            <state vertical-scroll-proportion="-3.7777777" vertical-offset="42" max-vertical-offset="918">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editors.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/editors.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4199" max-vertical-offset="4420">
-              <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -84,15 +131,9 @@
       <file leaf-file-name="import_q.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/scripts/import_q.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.884615" vertical-offset="501" max-vertical-offset="1394">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
-              <folding>
-                <marker date="1431775412212" expanded="true" signature="262:295" placeholder="SELECT * FRO..questions..." />
-                <marker date="1431775412212" expanded="true" signature="487:515" placeholder="SELECT * FRO..cats..." />
-                <marker date="1431775412212" expanded="true" signature="876:964" placeholder="INSERT INTO ..." />
-                <marker date="1431775412212" expanded="true" signature="1284:1315" placeholder="DELETE FROM ..." />
-                <marker date="1431775412212" expanded="true" signature="1363:1407" placeholder="SELECT * FRO..quest..." />
-              </folding>
+            <state vertical-scroll-proportion="9.333333" vertical-offset="378" max-vertical-offset="1476">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,6 +165,7 @@
         <option value="$PROJECT_DIR$/mobile/moble_edit_q.php" />
         <option value="$PROJECT_DIR$/mobile/import_from_db.php" />
         <option value="$PROJECT_DIR$/mobile/functions.php" />
+        <option value="$PROJECT_DIR$/mobile/scripts/editors.php" />
         <option value="$PROJECT_DIR$/mobile/mobile_edit_q.php" />
       </list>
     </option>
@@ -133,8 +175,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="960" />
+    <option name="width" value="1095" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -160,40 +201,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AnswyDatabase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AnswyDatabase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AnswyDatabase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AnswyDatabase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AnswyDatabase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -268,6 +275,40 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnswyDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,9 +345,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -314,6 +352,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -387,7 +428,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="1095" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -396,20 +437,20 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21822034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19091752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -438,13 +479,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/special_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1513">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/session_set.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="1700">
@@ -704,14 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/o_scripts/record_play.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="867">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/q3_geography.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5555556" vertical-offset="420" max-vertical-offset="3762">
@@ -761,51 +787,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/editors.php">
+    <entry file="file://$PROJECT_DIR$/mobile/import_from_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4199" max-vertical-offset="4420">
-          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1368">
+          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/import_from_db.php">
+    <entry file="file://$PROJECT_DIR$/scripts/editors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.461538" vertical-offset="153" max-vertical-offset="1292">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        <state vertical-scroll-proportion="-11.111111" vertical-offset="3804" max-vertical-offset="4680">
+          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
           <folding>
-            <marker date="1431775623592" expanded="true" signature="782:901" placeholder="..." />
-            <marker date="1431775623592" expanded="true" signature="812:901" placeholder="..." />
-            <marker date="1431775623592" expanded="true" signature="847:901" placeholder="..." />
-            <marker date="1431775623592" expanded="true" signature="945:994" placeholder="SELECT * FRO..questions..." />
-            <marker date="1431775623592" expanded="true" signature="1373:1551" placeholder="..." />
+            <marker date="1428156661306" expanded="true" signature="261:289" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428156661306" expanded="true" signature="414:462" placeholder="UPDATE quest..." />
+            <marker date="1428156661306" expanded="true" signature="799:833" placeholder="UPDATE quest..." />
+            <marker date="1428156661306" expanded="true" signature="1132:1160" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428156661306" expanded="true" signature="1285:1333" placeholder="UPDATE quest..." />
+            <marker date="1428156661306" expanded="true" signature="1665:1699" placeholder="UPDATE quest..." />
+            <marker date="1428156661306" expanded="true" signature="1934:1961" placeholder="DELETE FROM ..." />
+            <marker date="1428156661306" expanded="true" signature="2269:2318" placeholder="UPDATE quest..." />
+            <marker date="1428156661306" expanded="true" signature="2594:2612" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428156661306" expanded="true" signature="2688:2729" placeholder="SELECT count..quest..." />
+            <marker date="1428156661306" expanded="true" signature="2865:2903" placeholder="UPDATE cats ..." />
+            <marker date="1428156661306" expanded="true" signature="3025:3079" placeholder="SELECT count..quest..." />
+            <marker date="1428156661306" expanded="true" signature="3215:3252" placeholder="UPDATE cats ..." />
+            <marker date="1428156661306" expanded="true" signature="3374:3428" placeholder="SELECT count..quest..." />
+            <marker date="1428156661306" expanded="true" signature="3564:3600" placeholder="UPDATE cats ..." />
+            <marker date="1428156661306" expanded="true" signature="3714:3768" placeholder="SELECT count..quest..." />
+            <marker date="1428156661306" expanded="true" signature="3904:3941" placeholder="UPDATE cats ..." />
+            <marker date="1428156661306" expanded="true" signature="4267:4300" placeholder="DELETE FROM ..." />
+            <marker date="1428156661306" expanded="true" signature="4515:4542" placeholder="DELETE FROM ..." />
+            <marker date="1428156661306" expanded="true" signature="4770:4801" placeholder="DELETE FROM ..." />
+            <marker date="1428156661306" expanded="true" signature="5069:5127" placeholder="INSERT INTO ..." />
+            <marker date="1428156661306" expanded="true" signature="5463:5491" placeholder="SELECT * FRO..cats..." />
+            <marker date="1428156661306" expanded="true" signature="5616:5664" placeholder="UPDATE quest..." />
+            <marker date="1428156661306" expanded="true" signature="6002:6036" placeholder="UPDATE quest..." />
+            <marker date="1428156661306" expanded="true" signature="6322:6359" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/o_scripts/record_play.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7777777" vertical-offset="42" max-vertical-offset="918">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/quest_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="450">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <marker date="1427983411290" expanded="true" signature="237:284" placeholder="UPDATE quest..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/scripts/import_q.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.884615" vertical-offset="501" max-vertical-offset="1394">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
-          <folding>
-            <marker date="1431775412212" expanded="true" signature="262:295" placeholder="SELECT * FRO..questions..." />
-            <marker date="1431775412212" expanded="true" signature="487:515" placeholder="SELECT * FRO..cats..." />
-            <marker date="1431775412212" expanded="true" signature="876:964" placeholder="INSERT INTO ..." />
-            <marker date="1431775412212" expanded="true" signature="1284:1315" placeholder="DELETE FROM ..." />
-            <marker date="1431775412212" expanded="true" signature="1363:1407" placeholder="SELECT * FRO..quest..." />
-          </folding>
+        <state vertical-scroll-proportion="9.333333" vertical-offset="378" max-vertical-offset="1476">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/mobile_edit_q.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6099537" vertical-offset="102" max-vertical-offset="2329">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        <state vertical-scroll-proportion="-22.62963" vertical-offset="1441" max-vertical-offset="2538">
+          <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
           <folding>
-            <marker date="1431776770882" expanded="true" signature="131:160" placeholder="SELECT * FRO..quest..." />
-            <marker date="1431776770882" expanded="true" signature="415:444" placeholder="SELECT * FRO..quest..." />
-            <marker date="1431776770882" expanded="true" signature="574:592" placeholder="SELECT * FRO..cats..." />
-            <marker date="1431776770882" expanded="true" signature="1163:1192" placeholder="SELECT * FRO..quest..." />
+            <marker date="1431786702190" expanded="true" signature="131:160" placeholder="SELECT * FRO..quest..." />
+            <marker date="1431786702190" expanded="true" signature="415:444" placeholder="SELECT * FRO..quest..." />
+            <marker date="1431786702190" expanded="true" signature="574:592" placeholder="SELECT * FRO..cats..." />
+            <marker date="1431786702190" expanded="true" signature="1187:1216" placeholder="SELECT * FRO..quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/scripts/editors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8356164" vertical-offset="402" max-vertical-offset="1314">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+          <folding>
+            <marker date="1431785394448" expanded="true" signature="301:329" placeholder="SELECT * FRO..cats..." />
+            <marker date="1431785394448" expanded="true" signature="454:516" placeholder="UPDATE quest..." />
+            <marker date="1431785394448" expanded="true" signature="899:948" placeholder="UPDATE quest..." />
+            <marker date="1431785394448" expanded="true" signature="1323:1384" placeholder="UPDATE quest..." />
           </folding>
         </state>
       </provider>

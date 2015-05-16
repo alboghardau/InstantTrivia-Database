@@ -35,9 +35,9 @@ function disp_cats($id)
     foreach ($sql as $val) {
         if($val['id'] == $cat_id)
         {
-            echo '<a class="btn-floating btn-large orange">'.$val['name'].'</a>';
+            echo '<a class="btn-floating btn-large orange">'.substr($val['name'],0,3).'</a>';
         }  else {
-            echo '<a class="btn-floating btn-large blue" href="scripts/editors.php?action=1&cat_id='.$val['id'].'&id='.$id.'">'.$val['name'].'</a>';
+            echo '<a class="btn-floating btn-large blue" href="scripts/editors.php?action=1&cat_id='.$val['id'].'&id='.$id.'">'.substr($val['name'],0,3).'</a>';
         }
     }
     echo '</div></center>';
@@ -64,9 +64,9 @@ function disp_diff($id){
     {
         if($i+1 == $diff)
         {
-            echo '<a class="btn green">'.$sql[$i].'</a>';
+            echo '<a class="btn-floating btn-large orange">'.substr($sql[$i],0,3).'</a>';
         }  else {
-            echo '<a class="btn  blue" href="scripts/editors.php?action=2&diff='.($i+1).'&id='.$id.'">'.$sql[$i].'</a>';
+            echo '<a class="btn-floating btn-large blue" href="scripts/editors.php?action=2&diff='.($i+1).'&id='.$id.'">'.substr($sql[$i],0,3).'</a>';
         }
 
     }
@@ -99,24 +99,28 @@ function disp_diff($id){
         <div class="col s12">
             <div class="card red">
                 <div class="card-content">
-                    <form class="col s12">
+                    <form action="scripts/editors.php?action=3&id=<?php echo $id;?>" method="post" class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input placeholder="Question" id="first_name" type="text" class="white-text" value="<?php echo $question;?>">
+                                <input type="text" id="question" value="<?php echo $question;?>" class="white-text"/>
                             </div>
                             <div class="input-field col s12">
-                                <input placeholder="Answer" id="last_name" type="text" class="white-text" value="<?php echo $answer;?>">
+                                <input type="text" id="answer" value="<?php echo $answer;?>" class="white-text" />
                             </div>
-                            <div class="input-field col s12">
-                                <input id="submit" type="submit" class="btn col s12 white red-text">
+                            <div class="input-field">
+                                <a class="btn col s6 white red-text" href="import_from_db.php">Exit</a>
+                                <input type="submit" name="send" value="Edit" class="btn white red-text col s6"/>
                             </div>
                         </div>
-                        <div class="row">
-                            <?php disp_cats($cat_id);?>
-                        </div>
-                        <div class="row">
-                            <?php disp_diff($cat_id);?>
-                        </div>
+                    </form>
+
+                            <div class="row">
+                                <?php disp_cats($cat_id);?>
+                            </div>
+                            <div class="row">
+                                <?php disp_diff($cat_id);?>
+                            </div>
+
                     </form>
                 </div>
             </div>
