@@ -29,7 +29,7 @@ if($action == 1){
     header("Location: ../mobile_edit_q.php?id=".$qid);
 }
 
-//SET DIFFICULTY FOR EDIT QUESTION
+//SET DIFFICULTY FROM MOBILE EDIT QUESTION PAGE
 if($action == 2){
     $d = $_GET['diff'];
     $qid = $_GET['id'];
@@ -45,7 +45,7 @@ if($action == 2){
     header("Location: ../mobile_edit_q.php?id=".$qid);
 }
 
-//EDIT
+//EDIT QUESTION FROM MOBILE VIEW
 if($action == 3){
 
     $qid = $_GET['id'];
@@ -61,7 +61,18 @@ if($action == 3){
     $sql ->bindParam(3, $time_stamp);
     $sql->execute();
 
-    //header("Location: ../mobile_edit_q.php?id=".$qid);
+    header("Location: ../mobile_edit_q.php?id=".$qid);
+}
+
+//DELETE QUESTION FROM BASE QUESTIONS DATABASE
+if($action == 4){
+    $id = $_GET['id'];
+
+    $db = new PDO("sqlite:../../phpliteadmin/questions.db");
+
+    $sql = $db->query("DELETE FROM questions WHERE id=".$id);
+
+    header("Location: ../import_from_db.php");
 }
 
 

@@ -43,7 +43,7 @@
     echo '
         </div>
             <div class="card-action">
-                <a class="btn white red-text" href="#">Delete</a>
+                <a class="btn white red-text" href="scripts/editors.php?action=4&id='.$id.'">Delete</a>
                 <a class="btn white red-text" href="scripts/import_q.php?id='.$id.'">Add</a>
             </div>
         </div>
@@ -51,21 +51,9 @@
 
     </div>
                     ';
-
-
-
-
                     
                     ?>
 
 
-
-
-
-
-
-
-
-        
     </body>
 </html>

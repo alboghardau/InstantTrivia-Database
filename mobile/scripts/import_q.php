@@ -71,6 +71,6 @@ foreach($sql as $val)
     $id = $val['id'];
 }
 
-header("Location: ../import_from_db.php?id=".$id);
+header("Location: ../mobile_edit_q.php?id=".$id);
 ob_flush();
 ?>

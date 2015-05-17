@@ -102,10 +102,10 @@ function disp_diff($id){
                     <form action="scripts/editors.php?action=3&id=<?php echo $id;?>" method="post" class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input type="text" id="question" value="<?php echo $question;?>" class="white-text"/>
+                                <input type="text" name="question" value="<?php echo $question;?>" class="white-text"/>
                             </div>
                             <div class="input-field col s12">
-                                <input type="text" id="answer" value="<?php echo $answer;?>" class="white-text" />
+                                <input type="text" name="answer" value="<?php echo $answer;?>" class="white-text" />
                             </div>
                             <div class="input-field">
                                 <a class="btn col s6 white red-text" href="import_from_db.php">Exit</a>
