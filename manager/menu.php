@@ -1,4 +1,4 @@
-<nav>
+<nav class="teal">
   <ul class="left hide-on-med-and-down">
     <li><a href="#!">Import Questions</a></li>
     <li><a href="#!">Buffer Questions</a></li>
