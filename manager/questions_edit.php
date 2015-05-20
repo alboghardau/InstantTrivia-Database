@@ -71,7 +71,7 @@
   <html>
     <head>
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -106,7 +106,7 @@
                 echo '<div style="row">
                     <form class="row col s12" action="scripts/editors.php?action=3" method="post">
                         <div class="input-field col s8">
-                            <input type="text" name="question" value="' .$q.'" style="width:60%"/>
+                            <input type="text" name="question" value="' .$q.'"/>
                         </div>
                         <div class="input-field col s2">
                             <input type="text" name="answer" value="'.$a.'"/>
@@ -130,7 +130,7 @@
     <div class="center">
         <?php
 
-        $sql = $db->query("SELECT * FROM quest ORDER BY id ASC LIMIT ".(($_SESSION['edit_page']-1)*20).",20");
+        $sql = $db->query("SELECT * FROM quest ORDER BY id ASC LIMIT ".(($_SESSION['edit_page']-1)*15).",15");
         $sql2 = $db->prepare("SELECT count(*) FROM quest");
         $sql2->execute();
         $count = $sql2->fetch(PDO::FETCH_NUM);
@@ -139,7 +139,7 @@
 
         for($i = $_SESSION['edit_page']-8; $i < $_SESSION['edit_page']+8; $i++)
         {
-            if($i > 0 && $i < $count[0]/20)
+            if($i > 0 && $i < $count[0]/15)
             {
                 if($_SESSION['edit_page'] == $i)
                 {
@@ -163,16 +163,16 @@
         <div class="card">
             <div class="card-content">
         <?php 
-                $sql = $db->query("SELECT * FROM quest ORDER BY id ASC LIMIT ".(($_SESSION['edit_page']-1)*20).",20");
-                echo '<table class="bordered striped">';
+                $sql = $db->query("SELECT * FROM quest ORDER BY id ASC LIMIT ".(($_SESSION['edit_page']-1)*15).",15");
+                echo '<table class="bordered striped" >';
                 foreach ($sql as $val) {
                     echo "<tr>";
                     echo '<td>'.$val['id'].'</td>';
                     echo '<td>'.$val['question'].'</td>';
                     echo '<td>'.$val['answer'].'</td>';
                     echo '<td>'.$val['cat_name'].'</td>';
-                    echo '<td><a class="btn-floating btn waves-effect waves-light red" href="scripts/editors.php?action=4&id='.$val['id'].'" ><i class="mdi-action-delete"></i></a></td>';
-                    echo '<td><a class="btn-floating btn waves-effect waves-light teal" href="scripts/session_set.php?action=1&id='.$val['id'].'" ><i class="mdi-editor-border-color"></i></a></td>';
+                    echo '<td><a class="" href="scripts/editors.php?action=4&id='.$val['id'].'" ><i class="mdi-action-delete"></i></a></td>';
+                    echo '<td><a class="" href="scripts/session_set.php?action=1&id='.$val['id'].'" ><i class="mdi-editor-border-color"></i></a></td>';
                     echo "</tr>";
                 }
                 echo '</table>';                   

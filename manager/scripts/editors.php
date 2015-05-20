@@ -84,5 +84,21 @@ if($action == 4){
     header("Location: ../questions_edit.php");
 }
 
+//DELETE FROM SEARCH QUESTIONS
+if($action == 5){
+    $qid = $_GET["id"];
+
+    $db = new PDO("sqlite:../../phpliteadmin/answerit.db");
+
+    $sql1 = $db->prepare("DELETE FROM quest WHERE id=".$qid);
+    $sql1->execute();
+    $sql2 = $db->prepare("INSERT INTO question_deleted (id,time_stamp) VALUES (?,?)");
+    $sql2->bindParam(1,$qid);
+    $sql2->bindParam(2,$time_stamp);
+    $sql2->execute();
+
+    header("Location: ../search.php");
+}
+
 ob_flush();
 ?>

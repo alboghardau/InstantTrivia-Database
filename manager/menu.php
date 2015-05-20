@@ -3,6 +3,7 @@
     <li><a href="#!">Import Questions</a></li>
     <li><a href="#!">Buffer Questions</a></li>
     <li><a href="questions_edit.php">Edit Questions</a></li>
+    <li><a href="search.php">Search Questions</a></li>
     <li><a href="#!">Faulty Questions</a></li>
     <li><a href="#!">Categories</a></li>
   </ul>
@@ -10,6 +11,7 @@
     <li><a href="#!">Import Questions</a></li>
     <li><a href="#!">Buffer Questions</a></li>
     <li><a href="questions_edit.php">Edit Questions</a></li>
+    <li><a href="search.php">Search Questions</a></li>
     <li><a href="#!">Faulty Questions</a></li>
     <li><a href="#!">Categories</a></li>
   </ul>
