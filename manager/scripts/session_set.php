@@ -26,5 +26,14 @@ if($action == 3){
 
 
 
+
+//SET SEARCH FILTER
+if($action == 5){
+    $_SESSION['search_filter'] = $_GET['option'];
+    header("Location: ../search.php");
+}
+
+
+
 ob_flush();
 ?>

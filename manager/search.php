@@ -1,16 +1,25 @@
 <?php
-
-
 session_start();
 ob_start();
 $db = new PDO("sqlite:../phpliteadmin/answerit.db");
 
+if(!isset($_SESSION['search_filter'])) { $_SESSION['search_filter'] = 1;}
 
-function search($needle, $q ,$a)
+//TEST THE ANSWER WITH FILTER
+function search($needle, $q ,$a ,$option)
 {
-    if(stripos($q,$needle) !==false) return true;
-    if(stripos($a,$needle) !==false) return true;
-
+    switch ($option){
+        case 1:
+            if(stripos($q,$needle) !==false) return true;
+            if(stripos($a,$needle) !==false) return true;
+            break;
+        case 2:
+            if(stripos($q,$needle) !==false) return true;
+            break;
+        case 3:
+            if(stripos($a,$needle) !==false) return true;
+            break;
+    }
 }
 
 ?>
@@ -32,6 +41,19 @@ function search($needle, $q ,$a)
 
     <!--DISPLAY MENU-->
     <?php include 'menu.php'; ?>
+
+    <!--    FILTER  -->
+    <div class="row container">
+
+            <div class=" center">
+                <a class="btn" href="scripts/session_set.php?action=5&option=1">All</a>
+                <a class="btn" href="scripts/session_set.php?action=5&option=2">Question</a>
+                <a class="btn" href="scripts/session_set.php?action=5&option=3">Answer</a>
+            </div>
+    </div>
+
+
+    <!--    FORM-->
 
     <div class="row container">
         <div class="card">
@@ -59,7 +81,7 @@ function search($needle, $q ,$a)
                 $sql = $db->query("SELECT * FROM quest ORDER BY answer ASC");
                 echo '<table class="bordered striped" >';
                 foreach ($sql as $val) {
-                    if(search($_SESSION['search_term'],$val['question'],$val['answer']))
+                    if(search($_SESSION['search_term'],$val['question'],$val['answer'],$_SESSION['search_filter']))
                     {
                         echo "<tr>";
                         echo '<td>' . $val['id'] . '</td>';
