@@ -34,18 +34,18 @@ $db = new PDO("sqlite:../phpliteadmin/answerit.db");
 
         <?php
 
-
         $sql = $db->query("SELECT * FROM quest ORDER BY id ASC");
         echo '<table class="bordered striped" >';
         foreach ($sql as $val) {
-            echo "<tr>";
-            echo '<td>'.$val['id'].'</td>';
-            echo '<td>'.$val['question'].'</td>';
-            echo '<td>'.$val['answer'].'</td>';
-            echo '<td>'.$val['cat_name'].'</td>';
-            echo '<td><a class="" href="scripts/editors.php?action=4&id='.$val['id'].'" ><i class="mdi-action-delete"></i></a></td>';
-            echo '<td><a class="" href="scripts/session_set.php?action=1&id='.$val['id'].'" ><i class="mdi-editor-border-color"></i></a></td>';
-            echo "</tr>";
+            if(test_answer($val['answer'],$val['question']) == true) {
+                echo "<tr>";
+                echo '<td>' . $val['id'] . '</td>';
+                echo '<td>' . $val['question'] . '</td>';
+                echo '<td>' . $val['answer'] . '</td>';
+                echo '<td>' . $val['cat_name'] . '</td>';
+                echo '<td><a class="" href="scripts/editors.php?action=6&id=' . $val['id'] . '" ><i class="mdi-action-delete"></i></a></td>';
+                echo "</tr>";
+            }
         }
         echo '</table>';
 
@@ -55,8 +55,35 @@ $db = new PDO("sqlite:../phpliteadmin/answerit.db");
         </div>
     </div>
 
-
-
-
 </body>
 </html>
+
+<?php
+function test_answer($answer,$question){
+    $tester = false;
+
+    if (strpos($question,'  ') != false) {
+        return true;
+    }
+//        if (strpos($question,"?") == false){
+//            return true;
+//        }
+
+    if(ctype_lower($answer)){
+        return true;
+    }
+
+    $array = explode(" ", $answer);
+
+    if(sizeof($array) > 2){
+        return true;
+    }
+    foreach ($array as $key => $value){
+        if(strlen($value) > 10){
+            return true;
+        }
+    }
+}
+
+ob_flush();
+?>
