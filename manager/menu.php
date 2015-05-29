@@ -4,7 +4,7 @@
     <li><a href="#!">Buffer Questions</a></li>
     <li><a href="questions_edit.php">Edit Questions</a></li>
     <li><a href="search.php">Search Questions</a></li>
-    <li><a href="#!">Faulty Questions</a></li>
+    <li><a href="faulty.php">Faulty Questions</a></li>
     <li><a href="#!">Categories</a></li>
   </ul>
   <ul id="slide-out" class="side-nav">
@@ -12,7 +12,7 @@
     <li><a href="#!">Buffer Questions</a></li>
     <li><a href="questions_edit.php">Edit Questions</a></li>
     <li><a href="search.php">Search Questions</a></li>
-    <li><a href="#!">Faulty Questions</a></li>
+    <li><a href="faulty.php">Faulty Questions</a></li>
     <li><a href="#!">Categories</a></li>
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
