@@ -1,4 +1,21 @@
-    <!DOCTYPE html>
+<?php
+session_start();
+ob_start();
+$db = new PDO("sqlite:../phpliteadmin/answerit.db");
+
+$sql = $db->query("SELECT * FROM time_stamp");
+foreach($sql as $val){
+    $timeStamp = $val['time_stamp'];
+}
+
+$sql = $db->query("SELECT * FROM version");
+foreach($sql as $val){
+    $version = $val['number'];
+}
+
+?>
+
+<!DOCTYPE html>
     <html>
     <head>
         <!--Import materialize.css-->
@@ -15,20 +32,26 @@
     <body>
 
     <?php include 'menu.php'; ?>
-    <br/>
-    <div class="row container">
-        <div class="card">
-            <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+        <br/>
+        <div class="row container">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title black-text">TimeStamp</span>
+                    <p>Version:<?php echo $timeStamp?></p>
+                    <p>Time:<?php echo $version?></p>
+                    <form class="row col s12" action="scripts/editors.php?action=7" method="post">
+                        <div class="input-field col s12">
+                            <button class="btn col s12" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-
         </div>
-    </div>
-
-
-
-
-
     </body>
     </html>
+
+<?php
+
+ob_flush();
+
+?>

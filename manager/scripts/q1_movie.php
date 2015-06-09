@@ -92,7 +92,6 @@ include('simple_html_dom.php');
         }
     }
 
-
     //ADDS QUESTIONS TO THE DATABASE
     $j = 0;
     for( $i = 0 ; $i < sizeof($characters) ; $i++){

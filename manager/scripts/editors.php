@@ -116,5 +116,51 @@ if($action == 6){
     header("Location: ../faulty.php");
 }
 
+//UPDATE DATABASE TIMESTAMP
+if($action == 7){
+
+    $db = new PDO("sqlite:../../phpliteadmin/answerit.db");
+
+    //READ MOST RECENT TIME STAMP
+    $timeStamp = 0;
+
+    $sql = $db->query("SELECT time_stamp FROM quest ORDER BY time_stamp DESC LIMIT 1");
+    foreach($sql as $val){
+        $timeStamp = $val["time_stamp"];
+        echo $timeStamp."<br/>";
+    }
+
+    $sql = $db->query("SELECT time_stamp FROM question_deleted ORDER BY time_stamp DESC LIMIT 1");
+    foreach($sql as $val){
+        if($timeStamp < $val['time_stamp']){
+            $timeStamp = $val['time_stamp'];
+        }
+    }
+
+    //UPDATE TIME STAMP
+    $sql = $db->query("SELECT time_stamp FROM time_stamp LIMIT 1");
+    foreach($sql as $val){
+        $oldTimeStamp = $val["time_stamp"];
+    }
+
+    $sql = $db->prepare("UPDATE time_stamp SET time_stamp=? WHERE time_stamp=".$oldTimeStamp);
+    $sql->bindParam(1,$timeStamp);
+    $sql->execute();
+
+    //UPDATE VERSION
+    $sql = $db->query("SELECT number FROM version LIMIT 1");
+    foreach($sql as $val){
+        $oldVersion = $val['number'];
+    }
+
+    $sql = $db->prepare("UPDATE version SET number=? WHERE number=".$oldVersion);
+    $oldVersion = $oldVersion+1;
+    $sql->bindParam(1,$oldVersion);
+    $sql->execute();
+
+    echo $timeStamp;
+    header("Location: ../index.php");
+}
+
 ob_flush();
 ?>
