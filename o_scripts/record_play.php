@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60465509-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
 <?php
 
 
@@ -45,13 +64,6 @@ if($rows[0] == 0){      //val nu este in tabel
 
 ?>
 
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-60465509-2', 'auto');
-    ga('send', 'pageview');
 
-</script>
+
